@@ -1,0 +1,578 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../img/PLAYA1.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+   
+}
+
+
+.navbar-brand{
+    width: 11rem;    
+}
+
+ul li {
+    font-size: 1.7rem;
+    display: inline-block;
+    text-align: center;
+    padding: 0.3rem;
+}
+
+.nav-link{
+    color:rgb(3, 61, 61);
+    font-size: 1.9rem;
+    font-weight: bold;
+    letter-spacing: 0.02rem;
+    font-family: 'Rancho', cursive;
+    
+}
+
+.nav-link:hover{
+    color: rgb(1, 1, 34);
+}
+
+
+.portada{
+    display: flex;
+    width: 100%;
+    margin: 50%;
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
+
+.imagenportada{
+    opacity: 0.7;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+   
+}
+
+.fraseintroductoria{
+    justify-content: center;
+    font-family: 'Old Standard TT', serif;
+    font-size: 3.5rem;
+    color:white;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+}
+
+.fraseintroductoria:hover{
+    color: rgb(1, 1, 34);
+}
+
+.redessociales{
+    display: flex;
+
+}
+
+.twitter{
+    width: 3.5rem;
+    border-radius: 50%;
+    box-shadow: 2px 2px rgb(1, 1, 34);
+    transition: all .4s ease-in-out;
+}
+
+.twitter:hover{
+    transform: scale(1.2);
+    opacity: 1;
+    border: rgb(3, 61, 61) 2px solid;
+}
+
+.facebook{
+    width: 3.5rem;
+    border-radius: 50%;
+    box-shadow: 2px 2px rgb(1, 1, 34);
+    transition: all .4s ease-in-out;
+   
+}
+
+.facebook:hover{
+    transform: scale(1.2);
+    opacity: 1;
+    border: rgb(3, 61, 61) 2px solid;
+}
+
+.instagram{
+    width: 3.5rem;
+    border-radius: 50%;
+    box-shadow: 2px 2px rgb(1, 1, 34);
+    transition: all .4s ease-in-out;
+}
+
+.instagram:hover{
+    transform: scale(1.2);
+    opacity: 1;
+    border: rgb(3, 61, 61) 2px solid;
+}
+
+
+footer{
+    display: flex;
+    bottom: 0;
+    background-color: rgb(140, 163, 133, 0.2);
+}
+
+.posicionredes{
+    padding: auto;
+    margin: 1rem;
+    
+}
+
+
+.frasefooter{
+    position: relative;
+    margin-left: 2%;
+    margin-top: 2.5%;
+    width: 100%;
+    font-family: 'Rancho', cursive;
+    font-size: 1.5rem;
+    color: white;
+    
+}
+
+
+
+a{
+    text-decoration: none;
+    font-family: 'Old Standard TT', serif;
+    font-size: 1.2rem;
+    color: rgb(1, 1, 34);
+    margin-top: 6%;
+}
+
+a:hover{
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    padding:0.2%;
+    font-family: 'Old Standard TT', serif;
+    color: rgb(1, 1, 34);
+}
+
+
+.menu{
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1%;
+    padding: 2%;
+    margin-bottom: 10%;
+    background-image: none;
+    background-color: rgb(140, 163, 133, 0.5);
+    grid-template-areas: 
+    "EMPANADA CALAMARES CAMARONES COCTEL TOSTONES"
+    "FOSFORERA CATALANA PARRILLA LANGOSTA COCADA";
+    justify-items: center;
+}
+
+.empanada{
+    grid-area: empanada;
+}
+
+.calamares{
+    grid-area: calamares;
+}
+
+.camarones{
+    grid-area: camarones;
+}
+
+.coctel{
+    grid-area: coctel;
+}
+
+.tostones{
+    grid-area: tostones;
+}
+
+.fosforera{
+    grid-area: fosforera;
+}
+
+.catalana{
+    grid-area: catalana;
+}
+
+.parrilla{
+    grid-area: parrilla;
+}
+
+.langosta{
+    grid-area: langosta;
+}
+
+.cocada{
+    grid-area: cocaa;
+}
+
+.comida{
+    width: 100%;
+    height: 55%;
+    transition: all .4s ease-in-out;
+    transition: all 500ms ease-out;
+    cursor: pointer;
+}
+
+.comida:hover{
+    transform: scale(1.1);
+    border: rgb(3, 61, 61) 2px solid;
+    box-shadow: 6px 6px 15px rgb(1, 1, 34);
+}
+
+
+h2{
+    text-align: center;
+    padding: 2%;
+    font-family: 'Rancho', cursive;
+    color: rgb(140, 163, 133);
+    font-size: 2rem;
+    margin-top: 2%;
+    background-color: rgb(3, 61, 61);
+    width: 100%;
+}
+
+.descripcion{
+    font-family: 'Old Standard TT', serif;
+    font-size: 100%;
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    line-height: 1.5rem;
+    color: white;
+    background: rgb(3, 61, 61,0.8);
+    opacity: 1;
+    text-align: center;
+}
+
+.precio{
+    color: rgb(1, 1, 34);
+    font-size: 100%;
+    font-family: 'Old Standard TT', serif;
+    background-color:rgb(140, 163, 133);
+    width: 100%;
+    padding: 1%;
+    margin-bottom: 1%;
+    align-content: end;
+}
+
+   
+.historia{
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 0.25fr);
+    gap: 3%;
+    margin-bottom: 20%;
+    background-color: rgb(140, 163, 133, 0.5);
+    grid-template-areas:
+    "parrafo1 reportaje"
+    "parrafo2 reportaje"
+    "parrafo3 reportaje"
+    "videoabuela parrafo4"
+    "videoabuela parrafo5";
+}
+
+.parrafo1{
+    grid-area: parrafo1;
+    text-align: justify;
+    font-family: 'Old Standard TT', serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 2%;
+    color: white;
+    background: rgb(3, 61, 61,0.8);
+}
+
+.parrafo2{
+    grid-area: parrafo2;
+    text-align: justify;
+    font-family: 'Old Standard TT', serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 2%;
+    color: white;
+    background: rgb(3, 61, 61,0.8);
+
+}
+
+.parrafo3{
+    grid-area: parrafo3;
+    text-align: justify;
+    font-family: 'Old Standard TT', serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 2%;
+    color: white;
+    background: rgb(3, 61, 61,0.8);
+   
+}
+
+.parrafo4{
+    grid-area: parrafo4;
+    text-align: justify;
+    font-family: 'Old Standard TT', serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 2%;
+    color: white;
+    background: rgb(3, 61, 61,0.8);
+}
+
+.parrafo5{
+    grid-area: parrafo5;
+    text-align: justify;
+    font-family: 'Old Standard TT', serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 2%;
+    color: white;
+    background: rgb(3, 61, 61,0.8);
+}
+
+.reportaje{
+    grid-area: reportaje;
+    
+}
+
+.periodico{
+    width: 100%;
+    height: 100%;
+    box-shadow: 6px 6px 15px rgb(1, 1, 34);
+}
+
+.vinculoreportaje{
+    text-align: center;
+    font-size: 1rem;
+    font-family:'DM Serif Display', serif;
+    padding: 1%;
+    color: rgb(140, 163, 133);
+}
+
+.videoabuela{
+    grid-area: videoabuela;
+}
+
+.video1{
+    width: 100%;
+    height: 100%;
+    box-shadow: 6px 6px 6px rgb(1, 1, 34);
+    background-image: url(../img/ARENA.jpg);
+}
+
+
+.mapa{
+    text-align: center;
+    padding: 2%;
+}
+
+.video{
+    padding-top: 2%;
+    padding-left: 13.5%;
+    padding-bottom: 6%;
+    width: 1100px;
+    height: 600px;
+}
+
+.formulario{
+    text-align: justify;
+    font-family:'DM Serif Display', serif;
+    padding: 2%;
+    padding-left: 35%;
+    padding-right: 35%;
+    margin-bottom: 8%;
+    line-height: 2;  
+}
+
+.interiorformulario{
+    background-color: rgba(81, 68, 158, 0.342);
+}
+
+.botonera{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    
+  
+    body{
+       background-color:rgba(20, 202, 202, 0.13);
+    }
+
+    .navbar-brand{
+        margin-top: 5%; 
+    }
+    
+    
+    .nav-link{
+        padding: 0.2%;
+        color:rgb(3, 61, 61);
+        font-size: 1.5rem;
+        background-color: rgb(201, 225, 236);
+    }
+
+    .portada{
+        display: flex;
+        width: 100%;
+        margin: 50%;
+        margin-top: 25%;
+        margin-bottom: 25%;
+        position: relative;
+        justify-content: space-between;
+    
+    }
+    
+    .imagenportada{
+        margin-top: 10%;
+        width: 50rem;
+        height: 15rem;
+        opacity: 1;
+       
+    }
+    
+    .fraseintroductoria{
+        margin-top: 60%;
+        font-size: 3rem;
+       
+    }
+    
+
+    .twitter{
+    width: 2.5rem;
+    }
+
+
+
+    .facebook{
+    width: 2.5rem;
+    }
+
+
+
+    .instagram{
+    width: 2.5rem;
+ 
+    }
+
+
+    .posicionredes{
+    margin: 3rem;
+
+    }
+
+    footer {
+    margin-top: 95%;
+   
+    }
+
+    .frasefooter{
+    font-size: 1.2rem;
+    }
+    
+    .main__menu{
+        background-image: none;
+        background-color: rgb(140, 163, 133, 0.8);
+
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 1.5rem;
+        padding:1%;
+        font-family: 'Old Standard TT', serif;
+        color: rgb(1, 1, 34);
+    }
+
+    .menu{
+
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(11, 12rem);
+        gap: 2%;
+        row-gap: 1%;
+        margin-bottom: 1%;
+        grid-template-areas: 
+        "NAV"
+        "EMPANADA"
+        "CALAMARES"
+        "CAMARONES"
+        "COCTEL"
+        "TOSTONES"
+        "FOSFORERA"
+        "CATALANA"
+        "PARRILLA"
+        "LANGOSTA"
+        "COCADA";
+        
+    }
+    
+    .comida{
+        width: 40%;
+        height: 100%;
+        float: left;
+        margin-top: 0%;
+        box-shadow: 6px 6px 15px rgb(1, 1, 34);
+        bottom: none;
+    }
+
+    .comida:hover{
+        transform: none;
+        
+    }
+
+    h2{
+        padding: 0%;
+        display: inline;
+        font-size: 1.7rem;
+        height: 5%;
+        margin-top: 0%;
+    }
+
+    .descripcion{
+        margin-top: 0%;
+        padding: 0.9%;
+        float: right;
+        width: 60%;
+        height:84%;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        background: rgb(3, 61, 61,0.8);
+        opacity: 0.9;
+        text-align:left;
+    }
+
+    .precio{
+        color: rgb(1, 1, 34);
+        font-size: 70%;
+        font-family: 'Old Standard TT', serif;
+        background-color:rgb(140, 163, 133);
+        width: 20%;
+        float: right;
+        align-content: end;
+    }
+    
+    .footer__menu{
+        margin-top: 5%;
+    }
+    
+}
