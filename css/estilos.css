@@ -8,7 +8,6 @@ body{
     background-image: url(../img/PLAYA1.jpg);
     background-size: 100% 100%;
     width: 100%;
-   
 }
 
 
@@ -29,7 +28,7 @@ ul li {
     font-weight: bold;
     letter-spacing: 0.02rem;
     font-family: 'Rancho', cursive;
-    
+
 }
 
 .nav-link:hover{
@@ -43,25 +42,30 @@ ul li {
     margin: 50%;
     margin-top: 25%;
     margin-bottom: 25%;
+   
 }
 
 .imagenportada{
-    opacity: 0.7;
+    opacity: 0.8;
     width: 100%;
+    height: 45%;
     justify-content: center;
     align-items: center;
     position: absolute;
     transform: translate(-50%, -50%);
-   
+}
+
+.imagenportada:hover{
+    opacity: 1;
 }
 
 .fraseintroductoria{
+    width: 100%;
     justify-content: center;
     font-family: 'Old Standard TT', serif;
     font-size: 3.5rem;
     color:white;
-    text-align: center;
-    align-items: center;
+    text-align:center;
     position: absolute;
     transform: translate(-50%, -50%);
 
@@ -69,6 +73,26 @@ ul li {
 
 .fraseintroductoria:hover{
     color: rgb(1, 1, 34);
+}
+
+.portada__imag{
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 5%;
+}
+
+
+.modelos{
+    width: 25%;
+    height: 25%;
+    padding: 1.5%;
+    opacity: 0.8;
+    
+}
+
+.modelos:hover{
+    opacity: 1;
 }
 
 .redessociales{
@@ -166,14 +190,13 @@ h1 {
 
 .menu{
     display: grid;
-    min-height: 100vh;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 1%;
+    row-gap: 3%;
     padding: 2%;
+    margin-top: 3%;
     margin-bottom: 10%;
-    background-image: none;
-    background-color: rgb(140, 163, 133, 0.5);
     grid-template-areas: 
     "EMPANADA CALAMARES CAMARONES COCTEL TOSTONES"
     "FOSFORERA CATALANA PARRILLA LANGOSTA COCADA";
@@ -182,47 +205,61 @@ h1 {
 
 .empanada{
     grid-area: empanada;
+   
 }
 
 .calamares{
     grid-area: calamares;
+    
 }
 
 .camarones{
     grid-area: camarones;
+    
 }
 
 .coctel{
     grid-area: coctel;
+
 }
 
 .tostones{
     grid-area: tostones;
+    
 }
 
 .fosforera{
     grid-area: fosforera;
+    
 }
 
 .catalana{
     grid-area: catalana;
+    
 }
 
 .parrilla{
     grid-area: parrilla;
+  
 }
 
 .langosta{
     grid-area: langosta;
+    width: 100%;
+    height: 100%;
+    
 }
 
 .cocada{
-    grid-area: cocaa;
+    grid-area: cocada;
+    width: 100%;
+    height: 100%;
+    
 }
 
 .comida{
     width: 100%;
-    height: 55%;
+    height: 50%;
     transition: all .4s ease-in-out;
     transition: all 500ms ease-out;
     cursor: pointer;
@@ -249,7 +286,7 @@ h2{
 .descripcion{
     font-family: 'Old Standard TT', serif;
     font-size: 100%;
-    width: 100%;
+    width: auto;
     height: auto;
     padding: 2%;
     line-height: 1.5rem;
@@ -421,12 +458,15 @@ h2{
     }
 
     .navbar-brand{
-        margin-top: 5%; 
+        margin-top: 5%;
+        width: 7rem; 
     }
-    
+
+
     
     .nav-link{
         padding: 0.2%;
+        margin: 0.1%;
         color:rgb(3, 61, 61);
         font-size: 1.5rem;
         background-color: rgb(201, 225, 236);
@@ -447,16 +487,24 @@ h2{
         margin-top: 10%;
         width: 50rem;
         height: 15rem;
-        opacity: 1;
+        opacity: 0.7;
        
     }
     
     .fraseintroductoria{
-        margin-top: 60%;
-        font-size: 3rem;
+        margin-top: 50%;
+        font-size: 2rem;
        
     }
+
+    .portada__imag{
+        margin-top: 60%;
+        margin-bottom: 2%;
+    }
     
+    .frasefooter{
+        flex-direction: row;
+    }
 
     .twitter{
     width: 2.5rem;
@@ -477,14 +525,11 @@ h2{
 
 
     .posicionredes{
-    margin: 3rem;
+    margin: 1rem;
 
     }
 
-    footer {
-    margin-top: 95%;
-   
-    }
+
 
     .frasefooter{
     font-size: 1.2rem;
@@ -571,8 +616,5 @@ h2{
         align-content: end;
     }
     
-    .footer__menu{
-        margin-top: 5%;
-    }
     
 }
