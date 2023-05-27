@@ -357,9 +357,9 @@ h2{
     padding: 2%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, 0.25fr);
+    grid-template-rows: repeat(5, 0.15fr);
     gap: 3%;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
     grid-template-areas:
     "parrafo1 reportaje"
     "parrafo2 reportaje"
@@ -370,24 +370,24 @@ h2{
 
 .parrafo1{
     grid-area: parrafo1;
-    text-align: justify;
+    text-align:justify;
     font-family: 'Old Standard TT', serif;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    padding: 2%;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    padding: 1%;
     color: white;
-    background: rgb(3, 61, 61,0.8);
+    background: rgb(3, 61, 61,0.7);
 }
 
 .parrafo2{
     grid-area: parrafo2;
     text-align: justify;
     font-family: 'Old Standard TT', serif;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    padding: 2%;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    padding: 1%;
     color: white;
-    background: rgb(3, 61, 61,0.8);
+    background: rgb(3, 61, 61,0.7);
 
 }
 
@@ -395,11 +395,11 @@ h2{
     grid-area: parrafo3;
     text-align: justify;
     font-family: 'Old Standard TT', serif;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    padding: 2%;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    padding: 1%;
     color: white;
-    background: rgb(3, 61, 61,0.8);
+    background: rgb(3, 61, 61,0.7);
    
 }
 
@@ -407,26 +407,28 @@ h2{
     grid-area: parrafo4;
     text-align: justify;
     font-family: 'Old Standard TT', serif;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    padding: 2%;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    padding: 1%;
     color: white;
-    background: rgb(3, 61, 61,0.8);
+    background: rgb(3, 61, 61,0.7);
 }
 
 .parrafo5{
     grid-area: parrafo5;
     text-align: justify;
     font-family: 'Old Standard TT', serif;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    padding: 2%;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    padding: 1%;
     color: white;
-    background: rgb(3, 61, 61,0.8);
+    background: rgb(3, 61, 61,0.7);
 }
 
 .reportaje{
     grid-area: reportaje;
+    padding-bottom: 2%;
+  
     
 }
 
@@ -434,6 +436,7 @@ h2{
     width: 100%;
     height: 100%;
     box-shadow: 6px 6px 15px rgb(1, 1, 34);
+    border: rgb(3, 61, 61) 0.2rem solid;
 }
 
 .vinculoreportaje{
@@ -453,6 +456,7 @@ h2{
     height: 100%;
     box-shadow: 6px 6px 6px rgb(1, 1, 34);
     background-image: url(../img/ARENA.jpg);
+    border: rgb(3, 61, 61) 0.2rem solid;
 }
 
 /*final de la historia*/
@@ -486,7 +490,7 @@ h2{
     text-align: center;
     color:rgb(1, 1, 34);
     padding: 5%;
-    line-height: 2rem;  
+    line-height: 2rem; 
 }
 
 .carrousel{
@@ -547,6 +551,7 @@ h2{
         margin-top: 2%;
         margin-bottom: 2%;
         opacity: 1;
+        border: rgb(3, 61, 61) 0.2rem solid;
        
     }
     
@@ -555,32 +560,38 @@ h2{
     }
 
     .portada_imag{
-        padding-top: 2%;
+        margin-top: 5%;
         display: inline;
-        width: 10%;
         align-content: center;
+        padding-top: 0;
+        padding-bottom: 0;
     
     }
 
     .modelo_1{
+        margin-top: 5%;
         width: 100%;
         opacity: 1;
+        padding: 0;
+        border: rgb(3, 61, 61) 0.2rem solid;
         
     }
 
     .modelo_2{
-        width: 100%;
-        opacity: 1;  
+        display: none;
     }
 
     .modelo_3{
-        width: 100%;
-        opacity: 1;  
+        display: none;
     }
 
     .modelo_4{
+        margin-top: 5%;
+        margin-bottom: 5%;
         width: 100%;
-        opacity: 1;  
+        opacity: 1;
+        padding: 0;
+        border: rgb(3, 61, 61) 0.2rem solid;  
     }
 
     /*final queris inicio*/
@@ -619,11 +630,6 @@ h2{
     
     /*principio queris menu*/
 
-    .main__menu{
-        background-image: none;
-        background-color: rgb(140, 163, 133, 0.8);
-
-    }
 
     h1 {
         text-align: center;
@@ -634,7 +640,8 @@ h2{
     }
 
     .menu{
-
+        background-image: none;
+        background-color: rgb(140, 163, 133, 0.8);
         grid-template-columns: 1fr;
         grid-template-rows: repeat(11, 12rem);
         gap: 2%;
@@ -666,7 +673,6 @@ h2{
 
     .comida:hover{
         transform: none;
-        
     }
 
     h2{
@@ -686,6 +692,7 @@ h2{
         font-size: 1.2rem;
         line-height: 1.7rem;
         background: rgb(3, 61, 61,0.8);
+        border: rgb(3, 61, 61) 0.2rem solid;
         opacity: 0.9;
         text-align:left;
     }
@@ -695,6 +702,7 @@ h2{
         font-size: 70%;
         font-family: 'Old Standard TT', serif;
         background-color:rgb(140, 163, 133);
+        border: rgb(3, 61, 61) 0.2rem solid;
         width: 20%;
         text-align: right;
         float: right;
@@ -721,9 +729,9 @@ h2{
     }
 
     .parrafo1{
-        font-size: 1.2rem;
-        line-height: 1.3rem;
-        padding: 1%;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        padding: 2%;    
     }
     
     .parrafo2{
@@ -731,21 +739,25 @@ h2{
     }
 
     .parrafo3{
-        font-size: 1.2rem;
-        line-height: 1.3rem;
-        padding: 1%;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        padding: 2%;
     }
 
     .parrafo4{
-        font-size: 1.2rem;
-        line-height: 1.3rem;
-        padding: 1%;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        padding: 2%;
     }
 
     .parrafo5{
-        font-size: 1.2rem;
-        line-height: 1.3rem;
-        padding: 1%;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        padding: 2%;
+    }
+
+    .videoabuela{
+        background-image: url(../img/toalla.JPG);
     }
 
     .reportaje{
