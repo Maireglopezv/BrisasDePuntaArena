@@ -10,7 +10,7 @@ body{
     width: 100%;
 }
 
-
+/*principio del inicio*/
 .navbar-brand{
     width: 11rem;    
 }
@@ -131,6 +131,10 @@ ul li {
     opacity: 1;
 }
 
+/*final del inicio*/
+
+/*principio del footer*/
+
 .redessociales{
     display: flex;
 
@@ -214,6 +218,11 @@ a{
 a:hover{
     color: white;
 }
+
+
+/*final del footer*/
+
+/*principio del menu*/
 
 h1 {
     text-align: center;
@@ -331,15 +340,18 @@ h2{
 
 .precio{
     color: rgb(1, 1, 34);
-    font-size: 100%;
     font-family: 'Old Standard TT', serif;
+    font-weight: bold;
     background-color:rgb(140, 163, 133);
     width: 100%;
-    padding: 1%;
+    padding: 0.2%;
     margin-bottom: 1%;
     align-content: end;
 }
 
+/*final del menu*/
+
+/*principio de la historia*/
    
 .historia{
     padding: 2%;
@@ -348,7 +360,6 @@ h2{
     grid-template-rows: repeat(5, 0.25fr);
     gap: 3%;
     margin-bottom: 20%;
-    background-color: rgb(140, 163, 133, 0.5);
     grid-template-areas:
     "parrafo1 reportaje"
     "parrafo2 reportaje"
@@ -444,29 +455,45 @@ h2{
     background-image: url(../img/ARENA.jpg);
 }
 
+/*final de la historia*/
+
+
+/*principio de la ubicacion*/
 
 .mapa{
-    text-align: center;
     padding: 2%;
+    width: 100%;
+    height: 30rem;
 }
 
 .video{
-    padding-top: 2%;
-    padding-left: 13.5%;
-    padding-bottom: 6%;
-    width: 1100px;
-    height: 600px;
+    padding: 2%;
+    width: 100%;
+    height: 30rem;
 }
 
+/*final de la ubicacion*/
+
+
+/*principio del formulario*/
+
+
 .formulario{
-    text-align: justify;
+    width: 100%;
     font-family:'DM Serif Display', serif;
-    padding: 2%;
-    padding-left: 35%;
-    padding-right: 35%;
-    margin-bottom: 8%;
-    line-height: 2;  
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    color:rgb(1, 1, 34);
+    padding: 5%;
+    line-height: 2rem;  
 }
+
+.carrousel{
+    padding: 5%;
+    width: 100%
+}
+
 
 .interiorformulario{
     background-color: rgba(81, 68, 158, 0.342);
@@ -477,7 +504,7 @@ h2{
 }
 
 
-
+/*final del formulario*/
 
 
 
@@ -494,8 +521,6 @@ h2{
         margin-top: 1%;
         width: 20%; 
     }
-
-
     
     .nav-link{
         padding: 0.2%;
@@ -504,6 +529,8 @@ h2{
         font-size: 1.5rem;
         background-color:  rgb(140, 163, 133);
     }
+    
+    /*principio queris inicio*/
     
     .portada{
         display: flex;
@@ -530,13 +557,15 @@ h2{
     .portada_imag{
         padding-top: 2%;
         display: inline;
-        width: 100%;
+        width: 10%;
         align-content: center;
+    
     }
 
     .modelo_1{
         width: 100%;
-        opacity: 1;  
+        opacity: 1;
+        
     }
 
     .modelo_2{
@@ -553,6 +582,9 @@ h2{
         width: 100%;
         opacity: 1;  
     }
+
+    /*final queris inicio*/
+
 
     footer{
         display: inline-block;
@@ -584,11 +616,9 @@ h2{
     width: 2rem;
  
     }
+    
+    /*principio queris menu*/
 
-    
-    
-    
-    
     .main__menu{
         background-image: none;
         background-color: rgb(140, 163, 133, 0.8);
@@ -653,7 +683,7 @@ h2{
         float: right;
         width: 60%;
         height:84%;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         line-height: 1.7rem;
         background: rgb(3, 61, 61,0.8);
         opacity: 0.9;
@@ -666,9 +696,67 @@ h2{
         font-family: 'Old Standard TT', serif;
         background-color:rgb(140, 163, 133);
         width: 20%;
+        text-align: right;
         float: right;
         align-content: end;
     }
+
+    /*final queris menu*/
+
     
+    .historia{
+        padding: 3%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 0.20fr);
+        gap: 1%;
+        margin-bottom: 20%;
+        background-color: rgb(140, 163, 133, 0.8);
+        grid-template-areas:
+        "parrafo1"
+        "parrafo4"
+        "videoabuela"
+        "parrafo3"
+        "parrafo5"
+        ;
+    }
+
+    .parrafo1{
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+        padding: 1%;
+    }
     
+    .parrafo2{
+        display: none;
+    }
+
+    .parrafo3{
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+        padding: 1%;
+    }
+
+    .parrafo4{
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+        padding: 1%;
+    }
+
+    .parrafo5{
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+        padding: 1%;
+    }
+
+    .reportaje{
+        display: none;
+        
+    }
+    /*final de la historia*/
+
+    /*inicio de contacto*/
+    .formulario{
+        font-size: 1rem;
+        line-height: 1.5rem;  
+    }
 }
