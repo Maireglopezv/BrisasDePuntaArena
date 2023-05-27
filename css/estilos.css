@@ -539,9 +539,6 @@ h2{
     .portada{
         display: flex;
         width: 100%;
-        margin-top: 25%;
-        margin-bottom: 25%;
-    
     }
     
     .imagenportada{
@@ -551,7 +548,6 @@ h2{
         margin-top: 2%;
         margin-bottom: 2%;
         opacity: 1;
-        border: rgb(3, 61, 61) 0.2rem solid;
        
     }
     
@@ -560,7 +556,7 @@ h2{
     }
 
     .portada_imag{
-        margin-top: 5%;
+        margin-top: 2%;
         display: inline;
         align-content: center;
         padding-top: 0;
@@ -569,12 +565,11 @@ h2{
     }
 
     .modelo_1{
-        margin-top: 5%;
+        margin-top: 2%;
         width: 100%;
         opacity: 1;
         padding: 0;
-        border: rgb(3, 61, 61) 0.2rem solid;
-        
+      
     }
 
     .modelo_2{
@@ -586,12 +581,11 @@ h2{
     }
 
     .modelo_4{
-        margin-top: 5%;
+        margin-top: 2%;
         margin-bottom: 5%;
         width: 100%;
         opacity: 1;
-        padding: 0;
-        border: rgb(3, 61, 61) 0.2rem solid;  
+        padding: 0; 
     }
 
     /*final queris inicio*/
@@ -689,8 +683,8 @@ h2{
         float: right;
         width: 60%;
         height:84%;
-        font-size: 1.2rem;
-        line-height: 1.7rem;
+        font-size: 1.1rem;
+        line-height: 1.4rem;
         background: rgb(3, 61, 61,0.8);
         border: rgb(3, 61, 61) 0.2rem solid;
         opacity: 0.9;
@@ -718,7 +712,7 @@ h2{
         grid-template-rows: repeat(5, 0.20fr);
         gap: 1%;
         margin-bottom: 20%;
-        background-color: rgb(140, 163, 133, 0.8);
+        
         grid-template-areas:
         "parrafo1"
         "parrafo4"
