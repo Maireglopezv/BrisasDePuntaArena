@@ -1,0 +1,49 @@
+footer{
+    display: flex;
+    bottom: 0;
+    background-color: $arena_difm;
+    
+
+    .footer_frase{
+        position: relative;
+        margin-left: 2%;
+        margin-top: 2.5%;
+        width: 100%;
+        font-family: $letra2;
+        font-size: 1.5rem;
+        color: white;  
+    }
+
+    .redessociales{
+        display: flex;
+       
+        .posicionredes{
+            padding: auto;
+            margin: 1rem;
+            text-decoration: none;
+            font-family: $letra1;
+            font-size: 1.2rem;
+            color: rgb(1, 1, 34);
+            margin-top: 6%;
+
+            .twitter{
+                @include propiedades_redes;
+            }
+            .twitter:hover{
+                @include hover_redes;
+            }
+            .facebook{
+                @include propiedades_redes; 
+            }
+            .facebook:hover{
+                @include hover_redes;
+            }
+            .instagram{
+                @include propiedades_redes;
+            }
+            .instagram:hover{
+                @include hover_redes;
+            }
+        }
+    }
+}

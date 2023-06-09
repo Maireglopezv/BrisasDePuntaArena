@@ -1,0 +1,76 @@
+main{
+
+    .historia{
+        padding: 2%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, 0.15fr);
+        gap: 3%;
+        margin-bottom: 10%;
+        grid-template-areas:
+        "parrafo1 reportaje"
+        "parrafo2 reportaje"
+        "parrafo3 reportaje"
+        "videoabuela parrafo4"
+        "videoabuela parrafo5";
+
+        .parrafo1{
+            grid-area: parrafo1;
+            @include propiedades_historia;
+        }
+        .parrafo2{
+            grid-area: parrafo2;
+            @include propiedades_historia;
+        }
+        .parrafo3{
+            grid-area: parrafo3;
+            @include propiedades_historia;
+        }
+        .parrafo4{
+            grid-area: parrafo4;
+            @include propiedades_historia;
+        }
+        .parrafo5{
+            grid-area: parrafo5;
+            @include propiedades_historia;
+        }
+        .reportaje{
+            grid-area: reportaje;
+            padding-bottom: 2%;   
+        }
+        .periodico{
+            width: 100%;
+            height: 100%;
+            box-shadow: 6px 6px 6px $mar;
+            border: $agua 0.2rem solid;
+        }
+        .vinculoreportaje{
+            text-align: center;
+            font-size: 1rem;
+            padding: 1%;
+            color: $arena;
+        }
+        a{
+            text-decoration: none;
+            font-family: $letra1;
+            font-size: 1.2rem;
+            color: $mar;
+            margin-top: 6%;
+        }
+        
+        a:hover{
+            color:$arena;
+        }
+        
+        .videoabuela{
+            grid-area: videoabuela;
+        }
+        .video1{
+            width: 100%;
+            height: 100%;
+            box-shadow: 6px 6px 6px $mar;
+            background-image: url(../img/ARENA.jpg);
+            border: $agua 0.2rem solid;
+        }
+    }
+}

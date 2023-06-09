@@ -1,0 +1,41 @@
+
+.contenedor_mapa{
+
+    .mapa{
+        padding: 2%;
+        width: 96%;
+        height: 50rem;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        margin-left: 2%;
+        margin-right: 2%;
+        @include propiedades_historia;
+    }
+}
+
+.ubicacion_video{
+
+    .acceso{
+        font-family: $letra1;
+        color: $mar;
+        font-size: 2rem;
+        float: right;
+        margin-right: 5%;
+        margin-top: 2%;
+    }
+    .acceso:hover{
+        color: $arena;
+    }
+
+    .video{
+        padding: 2%;
+        width: 96%;
+        height: 20rem;
+        margin-top: 2%;
+        margin-bottom: 5%;
+        margin-left: 2%;
+        margin-right: 2%;
+        @include propiedades_historia;
+    }
+
+}

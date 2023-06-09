@@ -1,0 +1,41 @@
+@mixin propiedades_img{
+    width: 25%;
+    height: 25%;
+    padding: 1.5%;
+    opacity: 0.8; 
+}
+
+@mixin propiedades_redes{
+    width: 3.5rem;
+    border-radius: 50%;
+    box-shadow: 2px 2px $mar;
+    transition: all .4s ease-in-out;
+}
+
+@mixin hover_redes{
+    transform: scale(1.2);
+    border: rgb(3, 61, 61) 2px solid;
+}
+
+@mixin hover_comida{
+    transform: scale(1.1);
+    border: rgb(3, 61, 61) 2px solid;
+    box-shadow: 6px 6px 15px rgb(1, 1, 34);
+}
+
+@mixin propiedades_historia{
+    text-align: justify;
+    font-family: $letra1;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    padding: 1%;
+    color: white;
+    background-color: rgba(3, 61, 61, 0.699);
+}
+
+@mixin propiedas_historia_mobile{
+    font-size: 1rem;
+    line-height: 1.2rem;
+    padding: 2%;
+
+}
