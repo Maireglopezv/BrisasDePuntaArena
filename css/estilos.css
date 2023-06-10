@@ -570,7 +570,7 @@ body {
     main .historia .videoabuela {
       margin-bottom: 5%; }
       main .historia .videoabuela .video1 {
-        background-image: none;
+        background-image: url(../img/agapita.jpg);
         text-align: justify;
         font-family: "Old Standard TT", serif;
         font-size: 1.2rem;
