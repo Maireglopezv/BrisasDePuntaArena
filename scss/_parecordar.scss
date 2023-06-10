@@ -37,40 +37,42 @@ main{
         .reportaje{
             grid-area: reportaje;
             padding-bottom: 2%;   
-        }
-        .periodico{
-            width: 100%;
-            height: 100%;
-            box-shadow: 6px 6px 6px $mar;
-            border: $agua 0.2rem solid;
-        }
-        .vinculoreportaje{
-            text-align: center;
-            font-size: 1rem;
-            padding: 1%;
-            color: $arena;
-        }
-        a{
-            text-decoration: none;
-            font-family: $letra1;
-            font-size: 1.2rem;
-            color: $mar;
-            margin-top: 6%;
-        }
         
-        a:hover{
-            color:$arena;
+            .periodico{
+                width: 100%;
+                height: 100%;
+                box-shadow: 6px 6px 6px $mar;
+                background-image: url(../img/COCADA.jpg);
+                border: $agua 0.2rem solid;
+            }
+            .vinculoreportaje{
+                text-align: center;
+                font-size: 1rem;
+                padding: 1%;
+                color: $arena;
+            }
+            a{
+                text-decoration: none;
+                font-family: $letra1;
+                font-size: 1.2rem;
+                color: $mar;
+                margin-top: 6%;
+            }
+            
+            a:hover{
+                color:$arena;
+            }
         }
-        
         .videoabuela{
             grid-area: videoabuela;
-        }
-        .video1{
-            width: 100%;
-            height: 100%;
-            box-shadow: 6px 6px 6px $mar;
-            background-image: url(../img/ARENA.jpg);
-            border: $agua 0.2rem solid;
+        
+            .video1{
+                width: 100%;
+                height: 100%;
+                box-shadow: 6px 6px 6px $mar;
+                background-image: url(../img/ARENA.jpg);
+                border: $agua 0.2rem solid; 
+            }
         }
     }
 }

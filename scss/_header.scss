@@ -1,27 +1,28 @@
 header{
     .navbar{
+        
         .navbar-brand{
-            width: 11rem;    
+                width: 11rem;    
         }
-    }
-    .collapse{
-        ul li {
+
+           ul li {
             font-size: 1.7rem;
             display: inline-block;
             text-align: center;
             padding: 0.3rem;
-        
+            
             .nav-link{
                 color: $agua;
                 font-size: 1.9rem;
                 font-weight: bold;
                 letter-spacing: 0.02rem;
                 font-family: $letra2;
-            
+                
                 .nav-link:hover{
                     color: $mar;
                 }
             }
         }
+        
     }
 }
