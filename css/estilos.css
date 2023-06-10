@@ -570,14 +570,7 @@ body {
     main .historia .videoabuela {
       margin-bottom: 5%; }
       main .historia .videoabuela .video1 {
-        background-image: url(../img/agapita.jpg);
-        text-align: justify;
-        font-family: "Old Standard TT", serif;
-        font-size: 1.2rem;
-        line-height: 1.7rem;
-        padding: 1%;
-        color: white;
-        background-color: rgba(3, 61, 61, 0.699); }
+        background-image: url(../img/agapita.jpg); }
   /* pa ubicar */
   main .contenedor_mapa .mapa {
     width: 90%;
