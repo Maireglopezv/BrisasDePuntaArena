@@ -1,3 +1,11 @@
+@mixin propiedades_h1{
+    text-align: center;
+    font-size: 2.5rem;
+    padding:0.2%;
+    font-family: $letra1;
+    color: $mar;
+}
+
 @mixin propiedades_img{
     width: 25%;
     height: 25%;
@@ -38,4 +46,13 @@
     line-height: 1.2rem;
     padding: 2%;
 
+}
+
+@mixin propiedades_h1_mobile{
+    text-align: center;
+    font-size: 1.5rem;
+    padding:1%;
+    font-family: $letra1;
+    color: $mar;
+    animation: none;
 }

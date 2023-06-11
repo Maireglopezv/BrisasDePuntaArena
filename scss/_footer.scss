@@ -28,21 +28,23 @@ footer{
 
             .twitter{
                 @include propiedades_redes;
+                &:hover{
+                    @include hover_redes;
+                }
             }
-            .twitter:hover{
-                @include hover_redes;
-            }
+           
             .facebook{
                 @include propiedades_redes; 
+                &:hover{
+                    @include hover_redes;
+                }
             }
-            .facebook:hover{
-                @include hover_redes;
-            }
+            
             .instagram{
                 @include propiedades_redes;
-            }
-            .instagram:hover{
-                @include hover_redes;
+                &:hover{
+                    @include hover_redes;
+                }
             }
         }
     }

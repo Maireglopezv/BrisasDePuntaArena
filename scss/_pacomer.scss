@@ -1,11 +1,7 @@
-main{
+.main_menu{
     
     h1{
-        text-align: center;
-        font-size: 2.5rem;
-        padding:0.2%;
-        font-family: $letra1;
-        color: $mar;
+       @include propiedades_h1;
     }
     
     .menu{
@@ -16,7 +12,6 @@ main{
         row-gap: 3%;
         padding: 2%;
         margin-top: 3%;
- 
         grid-template-areas: 
         "EMPANADA CALAMARES CAMARONES COCTEL TOSTONES"
         "FOSFORERA CATALANA PARRILLA LANGOSTA COCADA";
@@ -68,9 +63,9 @@ main{
                 transition: all 500ms ease-out;
                 box-shadow: 6px 6px 15px $mar;
                 cursor: pointer;
-            }
-            .comida:hover{
-                @include hover_comida; 
+                &:hover{
+                    @include hover_comida; 
+                }
             }
             
             h2{
@@ -97,19 +92,17 @@ main{
                 box-shadow: 6px 6px 15px $mar;
                 opacity: 1;
                 text-align: center;
+                    .precio{
+                        color: $mar;
+                        font-family: $letra1;
+                        font-weight: bold;
+                        background-color:$arena;
+                        box-shadow: 6px 6px 15px $mar;
+                        width: 100%;
+                        padding: 0.2%;
+                        margin-bottom: 1%;
+                        align-content: end;
+                    }
             }
-            
-            .precio{
-                color: $mar;
-                font-family: $letra1;
-                font-weight: bold;
-                background-color:$arena;
-                box-shadow: 6px 6px 15px $mar;
-                width: 100%;
-                padding: 0.2%;
-                margin-bottom: 1%;
-                align-content: end;
-            }
-    }
-    
+    }  
 }

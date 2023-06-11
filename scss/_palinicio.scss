@@ -1,4 +1,4 @@
-main{
+.main_inicio{
     .portada{
         display: flex;
         width: 100%;
@@ -14,11 +14,11 @@ main{
             align-items: center;
             position: absolute;
             transform: translate(-50%, -50%);
+            &:hover{
+                opacity: 1;
+            }
         }
-        .portada_img:hover{
-            opacity: 1;
-        }
-       
+
         .portada_frase{
             width: 100%;
             justify-content: center;
@@ -31,20 +31,22 @@ main{
             animation-duration: 4s;
             animation-name: aparecer;
             animation-iteration-count: infinite;
-        }
 
-        @keyframes aparecer{
-            0%{
-                opacity: 0;
-                }
-            50%{
-                opacity: 1;
-                color: $mar;
-                }
-            100%{
-                opacity: 0;
-                }
-        } 
+            @keyframes aparecer{
+                0%{
+                    opacity: 0;
+                    color: $mar;
+                    }
+                50%{
+                    opacity: 1;
+                    color: white;
+                    }
+                100%{
+                    opacity: 0;
+                    color: $mar;
+                    }
+            } 
+        }  
     }
     
     .portada_imagenes{
@@ -55,30 +57,27 @@ main{
 
         .modelo_1{
             @include propiedades_img;
+            &:hover{
+                opacity: 1;
+            }
         }
-        .modelo_1:hover{
-            opacity: 1;
-        }
-        
         .modelo_2{
             @include propiedades_img;
+            &:hover{
+                opacity: 1;
+            }
         }
-        .modelo_2:hover{
-            opacity: 1;
-        }  
-       
         .modelo_3{
             @include propiedades_img;
+            &:hover{
+                opacity: 1;
+            }
         }
-        .modelo_3:hover{
-            opacity: 1;
-        }   
-        
         .modelo_4{
             @include propiedades_img;
-        }
-        .modelo_4:hover{
-            opacity: 1;
-        }      
-    }   
+            &:hover{
+                opacity: 1;
+            }
+        }   
+    }
 }

@@ -1,3 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-image: url(../img/PLAYA1.jpg);
+  background-size: 100% 100%;
+  width: 100%; }
+
 header .navbar .navbar-brand {
   width: 11rem; }
 
@@ -12,7 +22,7 @@ header .navbar ul li {
     font-weight: bold;
     letter-spacing: 0.02rem;
     font-family: "Rancho", cursive; }
-    header .navbar ul li .nav-link .nav-link:hover {
+    header .navbar ul li .nav-link:hover {
       color: #010122; }
 
 footer {
@@ -42,114 +52,33 @@ footer {
         border-radius: 50%;
         box-shadow: 2px 2px #010122;
         transition: all .4s ease-in-out; }
-      footer .redessociales .posicionredes .twitter:hover {
-        transform: scale(1.2);
-        border: #033d3d 2px solid; }
+        footer .redessociales .posicionredes .twitter:hover {
+          transform: scale(1.2);
+          border: #033d3d 2px solid; }
       footer .redessociales .posicionredes .facebook {
         width: 3.5rem;
         border-radius: 50%;
         box-shadow: 2px 2px #010122;
         transition: all .4s ease-in-out; }
-      footer .redessociales .posicionredes .facebook:hover {
-        transform: scale(1.2);
-        border: #033d3d 2px solid; }
+        footer .redessociales .posicionredes .facebook:hover {
+          transform: scale(1.2);
+          border: #033d3d 2px solid; }
       footer .redessociales .posicionredes .instagram {
         width: 3.5rem;
         border-radius: 50%;
         box-shadow: 2px 2px #010122;
         transition: all .4s ease-in-out; }
-      footer .redessociales .posicionredes .instagram:hover {
-        transform: scale(1.2);
-        border: #033d3d 2px solid; }
+        footer .redessociales .posicionredes .instagram:hover {
+          transform: scale(1.2);
+          border: #033d3d 2px solid; }
 
-main h1 {
-  text-align: center;
-  font-size: 2.5rem;
-  padding: 0.2%;
-  font-family: "Old Standard TT", serif;
-  color: #010122; }
-
-main .menu {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 1%;
-  row-gap: 3%;
-  padding: 2%;
-  margin-top: 3%;
-  grid-template-areas: "EMPANADA CALAMARES CAMARONES COCTEL TOSTONES" "FOSFORERA CATALANA PARRILLA LANGOSTA COCADA";
-  justify-items: center; }
-  main .menu .empanada {
-    grid-area: empanada; }
-  main .menu .calamares {
-    grid-area: calamares; }
-  main .menu .camarones {
-    grid-area: camarones; }
-  main .menu .coctel {
-    grid-area: coctel; }
-  main .menu .tostones {
-    grid-area: tostones; }
-  main .menu .fosforera {
-    grid-area: fosforera; }
-  main .menu .catalana {
-    grid-area: catalana; }
-  main .menu .parrilla {
-    grid-area: parrilla; }
-  main .menu .langosta {
-    grid-area: langosta; }
-  main .menu .cocada {
-    grid-area: cocada; }
-  main .menu .comida {
-    width: 100%;
-    height: 50%;
-    transition: all .4s ease-in-out;
-    transition: all 500ms ease-out;
-    box-shadow: 6px 6px 15px #010122;
-    cursor: pointer; }
-  main .menu .comida:hover {
-    transform: scale(1.1);
-    border: #033d3d 2px solid;
-    box-shadow: 6px 6px 15px #010122; }
-  main .menu h2 {
-    text-align: center;
-    padding: 2%;
-    font-family: "Rancho", cursive;
-    color: #8ca385;
-    font-size: 2rem;
-    margin-top: 2%;
-    background-color: #033d3d;
-    box-shadow: 6px 6px 15px #010122;
-    width: 100%; }
-  main .menu .descripcion {
-    font-family: "Old Standard TT", serif;
-    font-size: 100%;
-    width: auto;
-    height: auto;
-    padding: 2%;
-    line-height: 1.5rem;
-    color: white;
-    background: rgba(3, 61, 61, 0.808);
-    box-shadow: 6px 6px 15px #010122;
-    opacity: 1;
-    text-align: center; }
-  main .menu .precio {
-    color: #010122;
-    font-family: "Old Standard TT", serif;
-    font-weight: bold;
-    background-color: #8ca385;
-    box-shadow: 6px 6px 15px #010122;
-    width: 100%;
-    padding: 0.2%;
-    margin-bottom: 1%;
-    align-content: end; }
-
-main .portada {
+.main_inicio .portada {
   display: flex;
   width: 100%;
   margin: 50%;
   margin-top: 25%;
   margin-bottom: 25%; }
-  main .portada .portada_img {
+  .main_inicio .portada .portada_img {
     opacity: 0.8;
     width: 100%;
     height: 45%;
@@ -157,9 +86,9 @@ main .portada {
     align-items: center;
     position: absolute;
     transform: translate(-50%, -50%); }
-  main .portada .portada_img:hover {
-    opacity: 1; }
-  main .portada .portada_frase {
+    .main_inicio .portada .portada_img:hover {
+      opacity: 1; }
+  .main_inicio .portada .portada_frase {
     width: 100%;
     justify-content: center;
     font-family: "Old Standard TT", serif;
@@ -174,48 +103,138 @@ main .portada {
 
 @keyframes aparecer {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    color: #010122; }
   50% {
     opacity: 1;
-    color: #010122; }
+    color: white; }
   100% {
-    opacity: 0; } }
+    opacity: 0;
+    color: #010122; } }
 
-main .portada_imagenes {
+.main_inicio .portada_imagenes {
   display: flex;
   justify-content: center;
   padding-top: 1%;
   padding-bottom: 5%; }
-  main .portada_imagenes .modelo_1 {
+  .main_inicio .portada_imagenes .modelo_1 {
     width: 25%;
     height: 25%;
     padding: 1.5%;
     opacity: 0.8; }
-  main .portada_imagenes .modelo_1:hover {
-    opacity: 1; }
-  main .portada_imagenes .modelo_2 {
+    .main_inicio .portada_imagenes .modelo_1:hover {
+      opacity: 1; }
+  .main_inicio .portada_imagenes .modelo_2 {
     width: 25%;
     height: 25%;
     padding: 1.5%;
     opacity: 0.8; }
-  main .portada_imagenes .modelo_2:hover {
-    opacity: 1; }
-  main .portada_imagenes .modelo_3 {
+    .main_inicio .portada_imagenes .modelo_2:hover {
+      opacity: 1; }
+  .main_inicio .portada_imagenes .modelo_3 {
     width: 25%;
     height: 25%;
     padding: 1.5%;
     opacity: 0.8; }
-  main .portada_imagenes .modelo_3:hover {
-    opacity: 1; }
-  main .portada_imagenes .modelo_4 {
+    .main_inicio .portada_imagenes .modelo_3:hover {
+      opacity: 1; }
+  .main_inicio .portada_imagenes .modelo_4 {
     width: 25%;
     height: 25%;
     padding: 1.5%;
     opacity: 0.8; }
-  main .portada_imagenes .modelo_4:hover {
-    opacity: 1; }
+    .main_inicio .portada_imagenes .modelo_4:hover {
+      opacity: 1; }
 
-main .historia {
+.main_menu h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 0.2%;
+  font-family: "Old Standard TT", serif;
+  color: #010122; }
+
+.main_menu .menu {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1%;
+  row-gap: 3%;
+  padding: 2%;
+  margin-top: 3%;
+  grid-template-areas: "EMPANADA CALAMARES CAMARONES COCTEL TOSTONES" "FOSFORERA CATALANA PARRILLA LANGOSTA COCADA";
+  justify-items: center; }
+  .main_menu .menu .empanada {
+    grid-area: empanada; }
+  .main_menu .menu .calamares {
+    grid-area: calamares; }
+  .main_menu .menu .camarones {
+    grid-area: camarones; }
+  .main_menu .menu .coctel {
+    grid-area: coctel; }
+  .main_menu .menu .tostones {
+    grid-area: tostones; }
+  .main_menu .menu .fosforera {
+    grid-area: fosforera; }
+  .main_menu .menu .catalana {
+    grid-area: catalana; }
+  .main_menu .menu .parrilla {
+    grid-area: parrilla; }
+  .main_menu .menu .langosta {
+    grid-area: langosta; }
+  .main_menu .menu .cocada {
+    grid-area: cocada; }
+  .main_menu .menu .comida {
+    width: 100%;
+    height: 50%;
+    transition: all .4s ease-in-out;
+    transition: all 500ms ease-out;
+    box-shadow: 6px 6px 15px #010122;
+    cursor: pointer; }
+    .main_menu .menu .comida:hover {
+      transform: scale(1.1);
+      border: #033d3d 2px solid;
+      box-shadow: 6px 6px 15px #010122; }
+  .main_menu .menu h2 {
+    text-align: center;
+    padding: 2%;
+    font-family: "Rancho", cursive;
+    color: #8ca385;
+    font-size: 2rem;
+    margin-top: 2%;
+    background-color: #033d3d;
+    box-shadow: 6px 6px 15px #010122;
+    width: 100%; }
+  .main_menu .menu .descripcion {
+    font-family: "Old Standard TT", serif;
+    font-size: 100%;
+    width: auto;
+    height: auto;
+    padding: 2%;
+    line-height: 1.5rem;
+    color: white;
+    background: rgba(3, 61, 61, 0.808);
+    box-shadow: 6px 6px 15px #010122;
+    opacity: 1;
+    text-align: center; }
+    .main_menu .menu .descripcion .precio {
+      color: #010122;
+      font-family: "Old Standard TT", serif;
+      font-weight: bold;
+      background-color: #8ca385;
+      box-shadow: 6px 6px 15px #010122;
+      width: 100%;
+      padding: 0.2%;
+      margin-bottom: 1%;
+      align-content: end; }
+
+.main_historia h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 0.2%;
+  font-family: "Old Standard TT", serif;
+  color: #010122; }
+
+.main_historia .historia {
   padding: 2%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -223,7 +242,7 @@ main .historia {
   gap: 3%;
   margin-bottom: 10%;
   grid-template-areas: "parrafo1 reportaje" "parrafo2 reportaje" "parrafo3 reportaje" "videoabuela parrafo4" "videoabuela parrafo5"; }
-  main .historia .parrafo1 {
+  .main_historia .historia .parrafo1 {
     grid-area: parrafo1;
     text-align: justify;
     font-family: "Old Standard TT", serif;
@@ -232,7 +251,7 @@ main .historia {
     padding: 1%;
     color: white;
     background-color: rgba(3, 61, 61, 0.699); }
-  main .historia .parrafo2 {
+  .main_historia .historia .parrafo2 {
     grid-area: parrafo2;
     text-align: justify;
     font-family: "Old Standard TT", serif;
@@ -241,7 +260,7 @@ main .historia {
     padding: 1%;
     color: white;
     background-color: rgba(3, 61, 61, 0.699); }
-  main .historia .parrafo3 {
+  .main_historia .historia .parrafo3 {
     grid-area: parrafo3;
     text-align: justify;
     font-family: "Old Standard TT", serif;
@@ -250,7 +269,7 @@ main .historia {
     padding: 1%;
     color: white;
     background-color: rgba(3, 61, 61, 0.699); }
-  main .historia .parrafo4 {
+  .main_historia .historia .parrafo4 {
     grid-area: parrafo4;
     text-align: justify;
     font-family: "Old Standard TT", serif;
@@ -259,7 +278,7 @@ main .historia {
     padding: 1%;
     color: white;
     background-color: rgba(3, 61, 61, 0.699); }
-  main .historia .parrafo5 {
+  .main_historia .historia .parrafo5 {
     grid-area: parrafo5;
     text-align: justify;
     font-family: "Old Standard TT", serif;
@@ -268,38 +287,45 @@ main .historia {
     padding: 1%;
     color: white;
     background-color: rgba(3, 61, 61, 0.699); }
-  main .historia .reportaje {
-    grid-area: reportaje;
-    padding-bottom: 2%; }
-    main .historia .reportaje .periodico {
-      width: 100%;
-      height: 100%;
-      box-shadow: 6px 6px 6px #010122;
-      background-image: url(../img/COCADA.jpg);
-      border: #033d3d 0.2rem solid; }
-    main .historia .reportaje .vinculoreportaje {
-      text-align: center;
-      font-size: 1rem;
-      padding: 1%;
-      color: #8ca385; }
-    main .historia .reportaje a {
-      text-decoration: none;
-      font-family: "Old Standard TT", serif;
-      font-size: 1.2rem;
-      color: #010122;
-      margin-top: 6%; }
-    main .historia .reportaje a:hover {
-      color: #8ca385; }
-  main .historia .videoabuela {
+  .main_historia .historia .videoabuela {
     grid-area: videoabuela; }
-    main .historia .videoabuela .video1 {
+    .main_historia .historia .videoabuela .video1 {
       width: 100%;
       height: 100%;
       box-shadow: 6px 6px 6px #010122;
       background-image: url(../img/ARENA.jpg);
       border: #033d3d 0.2rem solid; }
+  .main_historia .historia .reportaje {
+    grid-area: reportaje;
+    padding-bottom: 2%; }
+    .main_historia .historia .reportaje .periodico {
+      width: 100%;
+      height: 100%;
+      box-shadow: 6px 6px 6px #010122;
+      background-image: url(../img/COCADA.jpg);
+      border: #033d3d 0.2rem solid; }
+    .main_historia .historia .reportaje .vinculoreportaje {
+      text-align: center;
+      font-size: 1rem;
+      padding: 1%;
+      color: #8ca385; }
+    .main_historia .historia .reportaje a {
+      text-decoration: none;
+      font-family: "Old Standard TT", serif;
+      font-size: 1.2rem;
+      color: #010122;
+      margin-top: 6%; }
+      .main_historia .historia .reportaje a:hover {
+        color: #8ca385; }
 
-.contenedor_mapa .mapa {
+.main_ubicacion h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 0.2%;
+  font-family: "Old Standard TT", serif;
+  color: #010122; }
+
+.main_ubicacion .contenedor_mapa .mapa {
   padding: 2%;
   width: 96%;
   height: 50rem;
@@ -315,18 +341,17 @@ main .historia {
   color: white;
   background-color: rgba(3, 61, 61, 0.699); }
 
-.ubicacion_video .acceso {
+.main_ubicacion .ubicacion_video .acceso {
   font-family: "Old Standard TT", serif;
   color: #010122;
   font-size: 2rem;
   float: right;
   margin-right: 5%;
   margin-top: 2%; }
+  .main_ubicacion .ubicacion_video .acceso:hover {
+    color: #8ca385; }
 
-.ubicacion_video .acceso:hover {
-  color: #8ca385; }
-
-.ubicacion_video .video {
+.main_ubicacion .ubicacion_video .video {
   padding: 2%;
   width: 96%;
   height: 20rem;
@@ -342,7 +367,14 @@ main .historia {
   color: white;
   background-color: rgba(3, 61, 61, 0.699); }
 
-.formulario {
+main h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 0.2%;
+  font-family: "Old Standard TT", serif;
+  color: #010122; }
+
+main .formulario {
   width: 100%;
   padding: 5%;
   font-family: "Old Standard TT", serif;
@@ -351,22 +383,22 @@ main .historia {
   text-align: left;
   color: #010122;
   line-height: 2rem; }
-  .formulario legend {
+  main .formulario legend {
     margin-bottom: 2%; }
-  .formulario legend:hover {
-    color: #033d3d; }
-  .formulario .interiorformulario {
+    main .formulario legend:hover {
+      color: #033d3d; }
+  main .formulario .interiorformulario {
     background-color: rgba(3, 61, 61, 0.644);
     border: #010122 0.15rem solid;
     box-shadow: 6px 6px 6px #010122; }
-    .formulario .interiorformulario label {
+    main .formulario .interiorformulario label {
       padding: 0.2%;
       margin-top: 1%;
       margin-left: 2%;
       color: white;
       font-family: "Old Standard TT", serif;
       font-size: 1.2rem; }
-    .formulario .interiorformulario input {
+    main .formulario .interiorformulario input {
       margin-left: 2%;
       margin-right: 2%;
       width: 96%;
@@ -375,31 +407,31 @@ main .historia {
       color: black;
       opacity: 0.3;
       border: #010122 0.15rem solid; }
-    .formulario .interiorformulario .comentarios {
+    main .formulario .interiorformulario .comentarios {
       text-align: center; }
-    .formulario .interiorformulario textarea {
+    main .formulario .interiorformulario textarea {
       width: 96%;
       color: #010122;
       font-size: 1.5rem;
       opacity: 0.7;
       background-image: url(../img/primera.jpeg);
+      background-size: 100% 100%;
       border: #010122 0.15rem solid; }
-    .formulario .interiorformulario .botonera {
+    main .formulario .interiorformulario .botonera {
       align-items: center;
       justify-content: center;
       width: 10%;
       margin-top: 2%;
       margin-bottom: 2%;
       margin-left: 45%; }
-    .formulario .interiorformulario .botonera:hover {
-      transform: scale(1.1);
-      border: #033d3d 2px solid;
-      box-shadow: 6px 6px 15px #010122;
-      transition: all .4s ease-in-out; }
+      main .formulario .interiorformulario .botonera:hover {
+        transform: scale(1.1);
+        border: #033d3d 2px solid;
+        box-shadow: 6px 6px 15px #010122;
+        transition: all .4s ease-in-out; }
 
-.carrousel {
+main .carrousel {
   width: 90%;
-  margin-right: 5%;
   margin-left: 5%;
   margin-bottom: 5%;
   text-align: justify;
@@ -409,16 +441,6 @@ main .historia {
   padding: 1%;
   color: white;
   background-color: rgba(3, 61, 61, 0.699); }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-body {
-  background-image: url(../img/PLAYA1.jpg);
-  background-size: 100% 100%;
-  width: 100%; }
 
 @media screen and (max-width: 768px) {
   body {
@@ -454,45 +476,45 @@ body {
       footer .redessociales .posicionredes .instagram {
         width: 2.3rem; }
   /* pal inicio */
-  main .portada {
+  .main_inicio .portada {
     display: flex;
     width: 100%; }
-    main .portada .portada_img {
+    .main_inicio .portada .portada_img {
       display: inline;
       width: 100%;
       height: 20%;
       margin-top: 2%;
       margin-bottom: 2%;
       opacity: 1; }
-    main .portada .portada_frase {
+    .main_inicio .portada .portada_frase {
       font-size: 2rem; }
-  main .portada_imagenes {
+  .main_inicio .portada_imagenes {
     margin-top: 2%;
     display: inline;
     align-content: center;
     padding-top: 0;
     padding-bottom: 0; }
-    main .portada_imagenes .modelo_1 {
+    .main_inicio .portada_imagenes .modelo_1 {
       margin-top: 2%;
       margin-bottom: 5%;
       width: 100%;
       opacity: 1;
       padding: 0; }
-    main .portada_imagenes .modelo_2 {
+    .main_inicio .portada_imagenes .modelo_2 {
       display: none; }
-    main .portada_imagenes .modelo_3 {
+    .main_inicio .portada_imagenes .modelo_3 {
       display: none; }
-    main .portada_imagenes .modelo_4 {
+    .main_inicio .portada_imagenes .modelo_4 {
       display: none; }
-  /* H1 */
-  .animate__animated {
+  /* pa comer */
+  .main_menu h1 {
     text-align: center;
     font-size: 1.5rem;
     padding: 1%;
     font-family: "Old Standard TT", serif;
-    color: #010122; }
-  /* pa comer */
-  main .menu {
+    color: #010122;
+    animation: none; }
+  .main_menu .menu {
     background-image: none;
     background-color: rgba(140, 163, 133, 0.801);
     grid-template-columns: 1fr;
@@ -501,14 +523,14 @@ body {
     row-gap: 1%;
     margin-bottom: 1%;
     grid-template-areas: "NAV" "EMPANADA" "CALAMARES" "CAMARONES" "COCTEL" "TOSTONES" "FOSFORERA" "CATALANA" "PARRILLA" "LANGOSTA" "COCADA"; }
-    main .menu .comida {
+    .main_menu .menu .comida {
       width: 40%;
       height: 100%;
       float: left;
       margin-top: 0%; }
-    main .menu .comida:hover {
-      transform: none; }
-    main .menu h2 {
+      .main_menu .menu .comida:hover {
+        transform: none; }
+    .main_menu .menu h2 {
       padding: 0%;
       display: inline;
       font-size: 1.7rem;
@@ -518,7 +540,7 @@ body {
       width: 60%;
       height: 18%;
       float: left; }
-    main .menu .descripcion {
+    .main_menu .menu .descripcion {
       margin-top: 0%;
       padding: 3%;
       float: right;
@@ -531,71 +553,92 @@ body {
       border: #033d3d 0.1rem solid;
       opacity: 0.9;
       text-align: left; }
-    main .menu .precio {
-      color: #010122;
-      font-size: 1rem;
-      font-family: "Old Standard TT", serif;
-      background-color: #8ca385;
-      border: #033d3d 0.2rem solid;
-      box-shadow: 6px 6px 15px #010122;
-      width: 20%;
-      text-align: center;
-      float: right;
-      align-content: end; }
+      .main_menu .menu .descripcion .precio {
+        color: #010122;
+        font-size: 1rem;
+        font-family: "Old Standard TT", serif;
+        background-color: #8ca385;
+        border: #033d3d 0.2rem solid;
+        box-shadow: 6px 6px 15px #010122;
+        width: 20%;
+        text-align: center;
+        float: right;
+        align-content: end; }
   /* pa la historia */
-  main .historia {
+  .main_historia h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1%;
+    font-family: "Old Standard TT", serif;
+    color: #010122;
+    animation: none; }
+  .main_historia .historia {
     padding: 3%;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 0.15fr);
     gap: 1%;
     grid-template-areas: "parrafo1" "parrafo4" "parrafo3" "videoabuela"; }
-    main .historia .parrafo1 {
+    .main_historia .historia .parrafo1 {
       font-size: 1rem;
       line-height: 1.2rem;
       padding: 2%; }
-    main .historia .parrafo2 {
+    .main_historia .historia .parrafo2 {
       display: none; }
-    main .historia .parrafo3 {
+    .main_historia .historia .parrafo3 {
       font-size: 1rem;
       line-height: 1.2rem;
       padding: 2%; }
-    main .historia .parrafo4 {
+    .main_historia .historia .parrafo4 {
       font-size: 1rem;
       line-height: 1.2rem;
       padding: 2%; }
-    main .historia .parrafo5 {
+    .main_historia .historia .parrafo5 {
       display: none; }
-    main .historia .reportaje {
-      display: none; }
-    main .historia .videoabuela {
+    .main_historia .historia .videoabuela {
       margin-bottom: 5%; }
-      main .historia .videoabuela .video1 {
+      .main_historia .historia .videoabuela .video1 {
         background-image: url(../img/agapita.jpg); }
+    .main_historia .historia .reportaje {
+      display: none; }
   /* pa ubicar */
-  main .contenedor_mapa .mapa {
+  .main_ubicacion h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1%;
+    font-family: "Old Standard TT", serif;
+    color: #010122;
+    animation: none; }
+  .main_ubicacion .contenedor_mapa .mapa {
     width: 90%;
     height: 25rem;
     margin-left: 5%;
     margin-right: 5%; }
-  main .ubicacion_video .acceso {
+  .main_ubicacion .ubicacion_video .acceso {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     float: none; }
-  main .ubicacion_video .video {
+  .main_ubicacion .ubicacion_video .video {
     width: 90%;
     height: 10rem;
     margin-left: 5%;
     margin-right: 5%; }
   /* pa contactar*/
-  main .formulario legend {
+  .main_contacto h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1%;
+    font-family: "Old Standard TT", serif;
+    color: #010122;
+    animation: none; }
+  .main_contacto .formulario legend {
     font-size: 1rem; }
-  main .formulario .interiorformulario {
+  .main_contacto .formulario .interiorformulario {
     font-size: 1rem; }
-    main .formulario .interiorformulario label {
+    .main_contacto .formulario .interiorformulario label {
       font-size: 1rem; }
-    main .formulario .interiorformulario input {
+    .main_contacto .formulario .interiorformulario input {
       font-size: 1rem; }
-    main .formulario .interiorformulario textarea {
+    .main_contacto .formulario .interiorformulario textarea {
       width: 96%;
       height: 5rem;
       margin-top: 2%;
@@ -604,11 +647,9 @@ body {
       background-image: none;
       background-color: white;
       font-size: 1rem; }
-    main .formulario .interiorformulario .botonera {
+    .main_contacto .formulario .interiorformulario .botonera {
       width: 20%;
       margin-left: 40%;
       margin-bottom: 2%; }
-      main .formulario .interiorformulario .botonera .enviar {
-        font-size: 1rem; }
-  main .animate__animated {
-    animation: none; } }
+      .main_contacto .formulario .interiorformulario .botonera .enviar {
+        font-size: 1rem; } }
