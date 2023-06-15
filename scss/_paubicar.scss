@@ -3,42 +3,129 @@
     h1{
         @include propiedades_h1;
      }
-     
-    .contenedor_mapa{
+     .mapa_formulario{
+        padding: 2%;
+        display: grid;
+        margin-top: 2%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 0.5fr);
+        gap: 3%;
+        grid-template-areas: 
+        "contenedor_mapa main_contacto"
+        "ubicacion_video ubicacion_video";
 
-        .mapa{
-            padding: 2%;
-            width: 96%;
-            height: 50rem;
-            margin-top: 2%;
-            margin-bottom: 2%;
-            margin-left: 2%;
-            margin-right: 2%;
-            @include propiedades_historia;
-        }
-    }
-    .ubicacion_video{
-        
-        .acceso{
-            font-family: $letra1;
-            color: $mar;
-            font-size: 2rem;
-            float: right;
-            margin-right: 5%;
-            margin-top: 2%;
-            &:hover{
-                color: $arena;
+        .contenedor_mapa{
+           
+            grid-area: contenedor_mapa;
+
+            .mapa{
+                width: 100%;
+                height: 40rem;
+                background-image: url(../img/balsa.jpeg);
+                box-shadow: 6px 6px 6px $mar;
+                border: $agua 0.2rem solid;  
             }
         }
-        .video{
-            padding: 2%;
-            width: 96%;
-            height: 20rem;
-            margin-top: 2%;
-            margin-bottom: 5%;
-            margin-left: 2%;
-            margin-right: 2%;
-            @include propiedades_historia;
+
+        .main_contacto{
+            grid-area: main_contacto;
+
+            .formulario{
+                width: 100%;
+                font-family: $letra1;
+                font-weight: bold;
+                font-size: 1.2rem;
+                text-align: left;
+                color: $mar;
+                line-height: 2rem;
+            
+                legend{
+                    font-size: 1.5rem;
+                    &:hover{
+                        color: $agua;
+                    }
+                }
+        
+                .interiorformulario{
+                    background-color: $agua_difm2;
+                    border: $agua 0.2rem solid;
+                    box-shadow: 6px 6px 6px $mar;
+               
+                    label{
+                        padding: 0.2%;
+                        margin-top: 1%;
+                        margin-left: 2%;
+                        color: white;
+                        font-family: $letra1;
+                        font-size: 1.2rem;
+                    }
+                    input{
+                        margin-left: 2%;
+                        margin-right: 2%;
+                        width: 96%;
+                        font-family: $letra2;
+                        font-size: 1.5rem;
+                        color: black;
+                        opacity: 0.3;
+                        border: $mar 0.15rem solid;
+                    }
+        
+                    .comentarios{
+                        text-align: center;
+                    }
+        
+                    textarea{
+                        width: 96%;
+                        color: $mar;
+                        font-size: 1.5rem;
+                        opacity: 0.5;
+                        background-image: url(../img/primera.jpeg);
+                        background-size: 100% 100%;
+                        border: $mar 0.15rem solid;
+                    }
+        
+                    .botonera{
+                        align-items: center;
+                        justify-content: center;
+                        width: 10%;
+                        margin-top: 2%;
+                        margin-bottom: 2%;
+                        margin-left: 45%;
+                        &:hover{
+                            @include hover_comida;
+                            transition: all .4s ease-in-out;
+                        }
+                    }  
+                }
+            }
         }
-    }
+
+        .ubicacion_video{
+
+            grid-area: ubicacion_video;
+
+                .acceso{
+                    margin-top: 2%;
+                    font-family: $letra1;
+                    line-height: 2rem;
+                    color: $mar;
+                    font-size: 1.5rem;
+                    text-align: center;
+                    
+                    &:hover{
+                        color: $agua;
+                    }
+                }
+                .video{
+                    width: 100%;
+                    height: 20rem;
+                    margin-bottom: 5%;
+                    border: $agua 0.2rem solid;
+                    box-shadow: 6px 6px 6px $mar;
+                    background-image: url(../img/primera.jpeg);
+                }
+        }
+    
+     }
+    
 }

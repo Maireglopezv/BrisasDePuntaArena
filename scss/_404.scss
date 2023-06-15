@@ -1,0 +1,54 @@
+.main_404{
+    .tranqui{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 4.2rem;
+        font-family: $letra1;
+        color: $mar;
+        margin-top: 5%;
+        animation-duration: 4s;
+        animation-name: aparecer;
+        animation-iteration-count: infinite;
+
+        @keyframes aparecer{
+            0%{
+                opacity: 0;
+                }
+            50%{
+                opacity: 1;
+                color: $mar;
+                }
+            100%{
+                opacity: 0;
+                }
+        } 
+       
+
+    }
+    .tranqui2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.7rem;
+        font-family: $letra2;
+        color: $agua;
+        &:hover{
+            color: $mar;
+            }
+       
+        
+    }
+    .contenedor_balsa{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .balsa{
+            width: 50%;
+            margin-bottom: 10%;
+            @include propiedades_historia; 
+            box-shadow: 6px 6px 6px $mar;
+            opacity: 0.7;
+        }
+    }
+}
