@@ -308,14 +308,11 @@ footer {
     .main_historia .historia .reportaje .vinculoreportaje {
       margin-top: 1%;
       float: right;
-      text-align: center;
-      background-color: rgba(140, 163, 133, 0.801);
-      border: #033d3d 0.15rem solid;
-      width: 20%; }
+      text-align: center; }
     .main_historia .historia .reportaje a {
       text-decoration: none;
       font-family: "Old Standard TT", serif;
-      font-size: 0.8rem;
+      font-size: 1rem;
       color: #010122; }
       .main_historia .historia .reportaje a:hover {
         color: #033d3d; }
