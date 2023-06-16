@@ -8,15 +8,15 @@
         padding: 2%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(6, 0.2fr);
-        gap: 3%;
+        grid-template-rows: repeat(6, 0.15fr);
+        gap: 1.5%;
         margin-bottom: 10%;
         grid-template-areas:
         "parrafo1 reportaje"
         "parrafo2 reportaje"
         "parrafo3 reportaje"
-        "videoabuela parrafo4"
-        "videoabuela parrafo5"
+        "video_abuela parrafo4"
+        "video_abuela parrafo5"
         "carrousel carrousel";
 
             .parrafo1{
@@ -39,10 +39,10 @@
                 grid-area: parrafo5;
                 @include propiedades_historia;
             }
-            .videoabuela{
-                grid-area: videoabuela;
+            .video_abuela{
+                grid-area: video_abuela;
             
-                .video1{
+                .video_1{
                     width: 100%;
                     height: 100%;
                     box-shadow: 6px 6px 6px $mar;
@@ -63,8 +63,7 @@
                     border: $agua 0.2rem solid;
                 }
                 .vinculoreportaje{
-                    margin-top: 1%;
-                    float: right;
+                    margin-bottom: 1%;
                     text-align: center;
                 }
                 a{
@@ -77,14 +76,10 @@
                     }
                 } 
             }
-
-            .carrousel{
+            .carousel{
                 grid-area: carrousel;
-                width: 100%;
-                border: $agua 0.2rem solid;
-                box-shadow: 6px 6px 6px $mar;
                 .carousel-item{
-                    height: 35rem;
+                    height: 30rem;
                 }
             }
         }

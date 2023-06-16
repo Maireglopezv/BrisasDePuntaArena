@@ -28,7 +28,8 @@ header .navbar ul li {
 footer {
   display: flex;
   bottom: 0;
-  background-color: rgba(140, 163, 133, 0.212); }
+  background-color: rgba(140, 163, 133, 0.212);
+  margin-top: 3%; }
   footer .footer_frase {
     position: relative;
     margin-left: 2%;
@@ -103,14 +104,11 @@ footer {
 
 @keyframes aparecer {
   0% {
-    opacity: 0;
-    color: #010122; }
+    opacity: 0; }
   50% {
-    opacity: 1;
-    color: white; }
+    opacity: 1; }
   100% {
-    opacity: 0;
-    color: #010122; } }
+    opacity: 0; } }
 
 .main_inicio .portada_imagenes {
   display: flex;
@@ -238,17 +236,17 @@ footer {
   padding: 2%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(6, 0.2fr);
-  gap: 3%;
+  grid-template-rows: repeat(6, 0.15fr);
+  gap: 1.5%;
   margin-bottom: 10%;
-  grid-template-areas: "parrafo1 reportaje" "parrafo2 reportaje" "parrafo3 reportaje" "videoabuela parrafo4" "videoabuela parrafo5" "carrousel carrousel"; }
+  grid-template-areas: "parrafo1 reportaje" "parrafo2 reportaje" "parrafo3 reportaje" "video_abuela parrafo4" "video_abuela parrafo5" "carrousel carrousel"; }
   .main_historia .historia .parrafo1 {
     grid-area: parrafo1;
     text-align: justify;
     font-family: "Old Standard TT", serif;
     font-size: 1.5rem;
     line-height: 2rem;
-    padding: 2.5%;
+    padding: 3.5%;
     color: white;
     background-color: rgba(3, 61, 61, 0.699); }
   .main_historia .historia .parrafo2 {
@@ -257,7 +255,7 @@ footer {
     font-family: "Old Standard TT", serif;
     font-size: 1.5rem;
     line-height: 2rem;
-    padding: 2.5%;
+    padding: 3.5%;
     color: white;
     background-color: rgba(3, 61, 61, 0.699); }
   .main_historia .historia .parrafo3 {
@@ -266,7 +264,7 @@ footer {
     font-family: "Old Standard TT", serif;
     font-size: 1.5rem;
     line-height: 2rem;
-    padding: 2.5%;
+    padding: 3.5%;
     color: white;
     background-color: rgba(3, 61, 61, 0.699); }
   .main_historia .historia .parrafo4 {
@@ -275,7 +273,7 @@ footer {
     font-family: "Old Standard TT", serif;
     font-size: 1.5rem;
     line-height: 2rem;
-    padding: 2.5%;
+    padding: 3.5%;
     color: white;
     background-color: rgba(3, 61, 61, 0.699); }
   .main_historia .historia .parrafo5 {
@@ -284,12 +282,12 @@ footer {
     font-family: "Old Standard TT", serif;
     font-size: 1.5rem;
     line-height: 2rem;
-    padding: 2.5%;
+    padding: 3.5%;
     color: white;
     background-color: rgba(3, 61, 61, 0.699); }
-  .main_historia .historia .videoabuela {
-    grid-area: videoabuela; }
-    .main_historia .historia .videoabuela .video1 {
+  .main_historia .historia .video_abuela {
+    grid-area: video_abuela; }
+    .main_historia .historia .video_abuela .video_1 {
       width: 100%;
       height: 100%;
       box-shadow: 6px 6px 6px #010122;
@@ -306,8 +304,7 @@ footer {
       background-image: url(../img/COCADA.jpg);
       border: #033d3d 0.2rem solid; }
     .main_historia .historia .reportaje .vinculoreportaje {
-      margin-top: 1%;
-      float: right;
+      margin-bottom: 1%;
       text-align: center; }
     .main_historia .historia .reportaje a {
       text-decoration: none;
@@ -316,13 +313,10 @@ footer {
       color: #010122; }
       .main_historia .historia .reportaje a:hover {
         color: #033d3d; }
-  .main_historia .historia .carrousel {
-    grid-area: carrousel;
-    width: 100%;
-    border: #033d3d 0.2rem solid;
-    box-shadow: 6px 6px 6px #010122; }
-    .main_historia .historia .carrousel .carousel-item {
-      height: 35rem; }
+  .main_historia .historia .carousel {
+    grid-area: carrousel; }
+    .main_historia .historia .carousel .carousel-item {
+      height: 30rem; }
 
 .main_ubicacion h1 {
   text-align: center;
@@ -338,7 +332,7 @@ footer {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 0.5fr);
   gap: 3%;
-  grid-template-areas: "contenedor_mapa main_contacto" "ubicacion_video ubicacion_video"; }
+  grid-template-areas: "contenedor_mapa contenedor_formulario" "contenedor_video contenedor_video"; }
   .main_ubicacion .mapa_formulario .contenedor_mapa {
     grid-area: contenedor_mapa; }
     .main_ubicacion .mapa_formulario .contenedor_mapa .mapa {
@@ -347,9 +341,9 @@ footer {
       background-image: url(../img/balsa.jpeg);
       box-shadow: 6px 6px 6px #010122;
       border: #033d3d 0.2rem solid; }
-  .main_ubicacion .mapa_formulario .main_contacto {
-    grid-area: main_contacto; }
-    .main_ubicacion .mapa_formulario .main_contacto .formulario {
+  .main_ubicacion .mapa_formulario .contenedor_formulario {
+    grid-area: contenedor_formulario; }
+    .main_ubicacion .mapa_formulario .contenedor_formulario .formulario {
       width: 100%;
       font-family: "Old Standard TT", serif;
       font-weight: bold;
@@ -357,22 +351,22 @@ footer {
       text-align: left;
       color: #010122;
       line-height: 2rem; }
-      .main_ubicacion .mapa_formulario .main_contacto .formulario legend {
+      .main_ubicacion .mapa_formulario .contenedor_formulario .formulario legend {
         font-size: 1.5rem; }
-        .main_ubicacion .mapa_formulario .main_contacto .formulario legend:hover {
+        .main_ubicacion .mapa_formulario .contenedor_formulario .formulario legend:hover {
           color: #033d3d; }
-      .main_ubicacion .mapa_formulario .main_contacto .formulario .interiorformulario {
+      .main_ubicacion .mapa_formulario .contenedor_formulario .formulario .interiorformulario {
         background-color: rgba(3, 61, 61, 0.644);
         border: #033d3d 0.2rem solid;
         box-shadow: 6px 6px 6px #010122; }
-        .main_ubicacion .mapa_formulario .main_contacto .formulario .interiorformulario label {
+        .main_ubicacion .mapa_formulario .contenedor_formulario .formulario .interiorformulario label {
           padding: 0.2%;
           margin-top: 1%;
           margin-left: 2%;
           color: white;
           font-family: "Old Standard TT", serif;
           font-size: 1.2rem; }
-        .main_ubicacion .mapa_formulario .main_contacto .formulario .interiorformulario input {
+        .main_ubicacion .mapa_formulario .contenedor_formulario .formulario .interiorformulario input {
           margin-left: 2%;
           margin-right: 2%;
           width: 96%;
@@ -381,9 +375,9 @@ footer {
           color: black;
           opacity: 0.3;
           border: #010122 0.15rem solid; }
-        .main_ubicacion .mapa_formulario .main_contacto .formulario .interiorformulario .comentarios {
+        .main_ubicacion .mapa_formulario .contenedor_formulario .formulario .interiorformulario .comentarios {
           text-align: center; }
-        .main_ubicacion .mapa_formulario .main_contacto .formulario .interiorformulario textarea {
+        .main_ubicacion .mapa_formulario .contenedor_formulario .formulario .interiorformulario textarea {
           width: 96%;
           color: #010122;
           font-size: 1.5rem;
@@ -391,30 +385,30 @@ footer {
           background-image: url(../img/primera.jpeg);
           background-size: 100% 100%;
           border: #010122 0.15rem solid; }
-        .main_ubicacion .mapa_formulario .main_contacto .formulario .interiorformulario .botonera {
+        .main_ubicacion .mapa_formulario .contenedor_formulario .formulario .interiorformulario .botonera {
           align-items: center;
           justify-content: center;
           width: 10%;
           margin-top: 2%;
           margin-bottom: 2%;
           margin-left: 45%; }
-          .main_ubicacion .mapa_formulario .main_contacto .formulario .interiorformulario .botonera:hover {
+          .main_ubicacion .mapa_formulario .contenedor_formulario .formulario .interiorformulario .botonera:hover {
             transform: scale(1.1);
             border: #033d3d 2px solid;
             box-shadow: 6px 6px 15px #010122;
             transition: all .4s ease-in-out; }
-  .main_ubicacion .mapa_formulario .ubicacion_video {
-    grid-area: ubicacion_video; }
-    .main_ubicacion .mapa_formulario .ubicacion_video .acceso {
+  .main_ubicacion .mapa_formulario .contenedor_video {
+    grid-area: contenedor_video; }
+    .main_ubicacion .mapa_formulario .contenedor_video .acceso {
       margin-top: 2%;
       font-family: "Old Standard TT", serif;
       line-height: 2rem;
       color: #010122;
       font-size: 1.5rem;
       text-align: center; }
-      .main_ubicacion .mapa_formulario .ubicacion_video .acceso:hover {
+      .main_ubicacion .mapa_formulario .contenedor_video .acceso:hover {
         color: #033d3d; }
-    .main_ubicacion .mapa_formulario .ubicacion_video .video {
+    .main_ubicacion .mapa_formulario .contenedor_video .video_2 {
       width: 100%;
       height: 20rem;
       margin-bottom: 5%;
@@ -464,7 +458,7 @@ footer {
     font-family: "Old Standard TT", serif;
     font-size: 1.5rem;
     line-height: 2rem;
-    padding: 2.5%;
+    padding: 3.5%;
     color: white;
     background-color: rgba(3, 61, 61, 0.699);
     box-shadow: 6px 6px 6px #010122;
@@ -605,7 +599,7 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 0.15fr);
     gap: 1%;
-    grid-template-areas: "parrafo1" "parrafo4" "videoabuela" "parrafo3" "carrousel"; }
+    grid-template-areas: "parrafo1" "parrafo4" "video_abuela" "parrafo3" "carousel"; }
     .main_historia .historia .parrafo1 {
       font-size: 1rem;
       line-height: 1.2rem;
@@ -622,15 +616,18 @@ footer {
       padding: 2%; }
     .main_historia .historia .parrafo5 {
       display: none; }
-    .main_historia .historia .videoabuela {
+    .main_historia .historia .video_abuela {
       height: 30rem;
       margin-bottom: 1%; }
-      .main_historia .historia .videoabuela .video1 {
+      .main_historia .historia .video_abuela .video_1 {
         background-image: url(../img/agapita.jpg); }
     .main_historia .historia .reportaje {
       display: none; }
-    .main_historia .historia .carrousel .carousel-item {
-      height: 100%; }
+    .main_historia .historia .carousel {
+      height: 100%;
+      margin-bottom: 0; }
+      .main_historia .historia .carousel .carousel-item {
+        height: 100%; }
   /* pa ubicar */
   .main_ubicacion h1 {
     text-align: center;
@@ -644,20 +641,20 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 0.15fr);
     gap: 1%;
-    grid-template-areas: "contenedor_mapa" "main_contacto" "ubicacion_video"; }
+    grid-template-areas: "contenedor_mapa" "contenedor_formulario" "contenedor_video"; }
     .main_ubicacion .mapa_formulario .contenedor_mapa .mapa {
       width: 100%;
       height: 15rem; }
-    .main_ubicacion .mapa_formulario .main_contacto .formulario legend {
+    .main_ubicacion .mapa_formulario .contenedor_formulario .formulario legend {
       text-align: center;
       font-size: 1rem; }
-    .main_ubicacion .mapa_formulario .main_contacto .formulario .interiorformulario {
+    .main_ubicacion .mapa_formulario .contenedor_formulario .formulario .interiorformulario {
       font-size: 1rem; }
-      .main_ubicacion .mapa_formulario .main_contacto .formulario .interiorformulario label {
+      .main_ubicacion .mapa_formulario .contenedor_formulario .formulario .interiorformulario label {
         font-size: 1rem; }
-      .main_ubicacion .mapa_formulario .main_contacto .formulario .interiorformulario input {
+      .main_ubicacion .mapa_formulario .contenedor_formulario .formulario .interiorformulario input {
         font-size: 1rem; }
-      .main_ubicacion .mapa_formulario .main_contacto .formulario .interiorformulario textarea {
+      .main_ubicacion .mapa_formulario .contenedor_formulario .formulario .interiorformulario textarea {
         width: 96%;
         height: 5rem;
         margin-top: 2%;
@@ -666,20 +663,20 @@ footer {
         background-image: none;
         background-color: white;
         font-size: 1rem; }
-      .main_ubicacion .mapa_formulario .main_contacto .formulario .interiorformulario .botonera {
+      .main_ubicacion .mapa_formulario .contenedor_formulario .formulario .interiorformulario .botonera {
         width: 20%;
         margin-left: 40%;
         margin-bottom: 2%; }
-        .main_ubicacion .mapa_formulario .main_contacto .formulario .interiorformulario .botonera .enviar {
+        .main_ubicacion .mapa_formulario .contenedor_formulario .formulario .interiorformulario .botonera .enviar {
           font-size: 1rem; }
-    .main_ubicacion .mapa_formulario .ubicacion_video {
+    .main_ubicacion .mapa_formulario .contenedor_video {
       height: 10rem;
       margin-bottom: 1%; }
-      .main_ubicacion .mapa_formulario .ubicacion_video .acceso {
+      .main_ubicacion .mapa_formulario .contenedor_video .acceso {
         text-align: center;
         font-size: 1rem;
         float: none; }
-      .main_ubicacion .mapa_formulario .ubicacion_video .video {
+      .main_ubicacion .mapa_formulario .contenedor_video .video_2 {
         width: 100%;
         height: 15rem; }
   .main_404 .tranqui {

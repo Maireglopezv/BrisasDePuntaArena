@@ -11,8 +11,8 @@
         grid-template-rows: repeat(2, 0.5fr);
         gap: 3%;
         grid-template-areas: 
-        "contenedor_mapa main_contacto"
-        "ubicacion_video ubicacion_video";
+        "contenedor_mapa contenedor_formulario"
+        "contenedor_video contenedor_video";
 
         .contenedor_mapa{
            
@@ -27,8 +27,8 @@
             }
         }
 
-        .main_contacto{
-            grid-area: main_contacto;
+        .contenedor_formulario{
+            grid-area: contenedor_formulario;
 
             .formulario{
                 width: 100%;
@@ -100,9 +100,9 @@
             }
         }
 
-        .ubicacion_video{
+        .contenedor_video{
 
-            grid-area: ubicacion_video;
+            grid-area: contenedor_video;
 
                 .acceso{
                     margin-top: 2%;
@@ -116,7 +116,7 @@
                         color: $agua;
                     }
                 }
-                .video{
+                .video_2{
                     width: 100%;
                     height: 20rem;
                     margin-bottom: 5%;

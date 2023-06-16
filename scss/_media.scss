@@ -205,9 +205,9 @@
             grid-template-areas:
             "parrafo1"
             "parrafo4"
-            "videoabuela"
+            "video_abuela"
             "parrafo3"
-            "carrousel"
+            "carousel"
             ;
 
             .parrafo1{
@@ -230,11 +230,11 @@
                 display: none;
             }
 
-            .videoabuela{
+            .video_abuela{
                 height: 30rem;
                 margin-bottom: 1%;
 
-                .video1{
+                .video_1{
                     background-image: url(../img/agapita.jpg);
                 }
             }
@@ -242,7 +242,9 @@
             .reportaje{
                 display: none;
             }
-            .carrousel{
+            .carousel{
+                height: 100%;
+                margin-bottom: 0;
                 .carousel-item{
                     height: 100%;
                 }
@@ -265,8 +267,8 @@
             gap: 1%;
             grid-template-areas:
             "contenedor_mapa"
-            "main_contacto"
-            "ubicacion_video";
+            "contenedor_formulario"
+            "contenedor_video";
 
             .contenedor_mapa{
                 .mapa{
@@ -275,7 +277,7 @@
                 }
             }
 
-            .main_contacto{
+            .contenedor_formulario{
         
                 .formulario{
                     legend{
@@ -312,7 +314,7 @@
                 }
             }
 
-            .ubicacion_video{
+            .contenedor_video{
                 height: 10rem;
                 margin-bottom: 1%;
                 
@@ -321,7 +323,7 @@
                     font-size: 1rem;
                     float: none;
                 }
-                .video{
+                .video_2{
                     width: 100%;
                     height: 15rem;
                 }
