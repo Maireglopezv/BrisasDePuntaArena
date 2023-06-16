@@ -17,7 +17,7 @@
         "parrafo3 reportaje"
         "video_abuela parrafo4"
         "video_abuela parrafo5"
-        "carrousel carrousel";
+        "carousel carousel";
 
             .parrafo1{
                 grid-area: parrafo1;
@@ -60,6 +60,7 @@
                     height: 100%;
                     box-shadow: 6px 6px 6px $mar;
                     background-image: url(../img/COCADA.jpg);
+                    background-size: 100% 100%;
                     border: $agua 0.2rem solid;
                 }
                 .vinculoreportaje{
@@ -77,7 +78,7 @@
                 } 
             }
             .carousel{
-                grid-area: carrousel;
+                grid-area: carousel;
                 .carousel-item{
                     height: 30rem;
                 }

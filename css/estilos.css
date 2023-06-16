@@ -239,7 +239,7 @@ footer {
   grid-template-rows: repeat(6, 0.15fr);
   gap: 1.5%;
   margin-bottom: 10%;
-  grid-template-areas: "parrafo1 reportaje" "parrafo2 reportaje" "parrafo3 reportaje" "video_abuela parrafo4" "video_abuela parrafo5" "carrousel carrousel"; }
+  grid-template-areas: "parrafo1 reportaje" "parrafo2 reportaje" "parrafo3 reportaje" "video_abuela parrafo4" "video_abuela parrafo5" "carousel carousel"; }
   .main_historia .historia .parrafo1 {
     grid-area: parrafo1;
     text-align: justify;
@@ -302,6 +302,7 @@ footer {
       height: 100%;
       box-shadow: 6px 6px 6px #010122;
       background-image: url(../img/COCADA.jpg);
+      background-size: 100% 100%;
       border: #033d3d 0.2rem solid; }
     .main_historia .historia .reportaje .vinculoreportaje {
       margin-bottom: 1%;
@@ -314,7 +315,7 @@ footer {
       .main_historia .historia .reportaje a:hover {
         color: #033d3d; }
   .main_historia .historia .carousel {
-    grid-area: carrousel; }
+    grid-area: carousel; }
     .main_historia .historia .carousel .carousel-item {
       height: 30rem; }
 
