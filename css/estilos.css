@@ -682,15 +682,15 @@ footer {
         height: 15rem; }
   .main_404 .tranqui {
     margin-top: 10%;
-    margin-bottom: 10%;
+    margin-bottom: 4%;
     font-size: 2rem;
     animation-duration: none;
     animation-name: none; }
   .main_404 .tranqui2 {
-    margin-top: 10%;
-    margin-bottom: 12%;
-    padding: 5%;
-    font-size: 1.7rem;
+    margin-top: 4%;
+    margin-bottom: 10%;
+    padding: 1.5%;
+    font-size: 1.5rem;
     color: #010122;
     text-align: center;
     background-color: rgba(140, 163, 133, 0.801); }
