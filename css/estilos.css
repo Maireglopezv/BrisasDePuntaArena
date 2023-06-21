@@ -8,28 +8,28 @@ body {
   background-size: 100% 100%;
   width: 100%; }
 
-header .navbar .navbar-brand {
+header .navbar .container-fluid .navbar-brand {
   width: 11rem; }
 
-header .navbar ul li {
+header .navbar .navbar-collapse ul li {
   font-size: 1.7rem;
   display: inline-block;
   text-align: center;
   padding: 0.3rem; }
-  header .navbar ul li .nav-link {
+  header .navbar .navbar-collapse ul li .nav-link {
     color: #033d3d;
     font-size: 1.9rem;
     font-weight: bold;
     letter-spacing: 0.02rem;
     font-family: "Rancho", cursive; }
-    header .navbar ul li .nav-link:hover {
+    header .navbar .navbar-collapse ul li .nav-link:hover {
       color: #010122; }
 
 footer {
   display: flex;
   bottom: 0;
   background-color: rgba(140, 163, 133, 0.212);
-  margin-top: 3%; }
+  margin-top: 5%; }
   footer .footer_frase {
     position: relative;
     margin-left: 2%;
@@ -418,6 +418,86 @@ footer {
       box-shadow: 6px 6px 6px #010122;
       background-image: url(../img/primera.jpeg); }
 
+.main_galeria h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 0.2%;
+  font-family: "Old Standard TT", serif;
+  color: #010122; }
+
+.main_galeria .galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 0.5fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1%;
+  row-gap: 3%;
+  padding: 2%;
+  margin-top: 3%;
+  justify-items: center;
+  grid-template-areas: "galeria_imag_1 galeria_imag_2 galeria_imag_3 galeria_imag_4" "galeria_imag_13 galeria_imag_14 galeria_imag_15 galeria_imag_16" "galeria_imag_5 galeria_imag_6 galeria_imag_7 galeria_imag_8" "galeria_imag_9 galeria_imag_10 galeria_imag_11 galeria_imag_12" "galeria_imag_17 galeria_imag_18 galeria_imag_19 galeria_imag_20"; }
+  .main_galeria .galeria .galeria_imag_1 {
+    grid-area: galeria_imag_1; }
+  .main_galeria .galeria .galeria_imag_2 {
+    grid-area: galeria_imag_2; }
+  .main_galeria .galeria .galeria_imag_3 {
+    grid-area: galeria_imag_3; }
+  .main_galeria .galeria .galeria_imag_4 {
+    grid-area: galeria_imag_4; }
+  .main_galeria .galeria .galeria_imag_5 {
+    grid-area: galeria_imag_5; }
+  .main_galeria .galeria .galeria_imag_6 {
+    grid-area: galeria_imag_6; }
+  .main_galeria .galeria .galeria_imag_7 {
+    grid-area: galeria_imag_7; }
+  .main_galeria .galeria .galeria_imag_8 {
+    grid-area: galeria_imag_8; }
+  .main_galeria .galeria .galeria_imag_9 {
+    grid-area: galeria_imag_9; }
+  .main_galeria .galeria .galeria_imag_10 {
+    grid-area: galeria_imag_10; }
+  .main_galeria .galeria .galeria_imag_11 {
+    grid-area: galeria_imag_11; }
+  .main_galeria .galeria .galeria_imag_12 {
+    grid-area: galeria_imag_12; }
+  .main_galeria .galeria .galeria_imag_13 {
+    grid-area: galeria_imag_13; }
+  .main_galeria .galeria .galeria_imag_14 {
+    grid-area: galeria_imag_14; }
+  .main_galeria .galeria .galeria_imag_15 {
+    grid-area: galeria_imag_15; }
+  .main_galeria .galeria .galeria_imag_16 {
+    grid-area: galeria_imag_16; }
+  .main_galeria .galeria .galeria_imag_17 {
+    grid-area: galeria_imag_17; }
+  .main_galeria .galeria .galeria_imag_18 {
+    grid-area: galeria_imag_18; }
+  .main_galeria .galeria .galeria_imag_19 {
+    grid-area: galeria_imag_19; }
+  .main_galeria .galeria .galeria_imag_20 {
+    grid-area: galeria_imag_20; }
+  .main_galeria .galeria .galeria_imag {
+    width: 95%;
+    height: 100%;
+    transition: all .4s ease-in-out;
+    transition: all 500ms ease-out;
+    box-shadow: 6px 6px 15px #010122;
+    cursor: pointer; }
+    .main_galeria .galeria .galeria_imag:hover {
+      transform: scale(1.1);
+      border: #033d3d 2px solid;
+      box-shadow: 6px 6px 15px #010122; }
+
+.main_galeria .derecho_fotografico {
+  float: right;
+  margin-right: 4%; }
+  .main_galeria .derecho_fotografico .fotografias {
+    text-decoration: none;
+    font-family: "Old Standard TT", serif;
+    font-size: 0.8rem;
+    color: white; }
+    .main_galeria .derecho_fotografico .fotografias:hover {
+      color: #010122; }
+
 .main_404 .tranqui {
   display: flex;
   align-items: center;
@@ -468,13 +548,14 @@ footer {
 @media screen and (max-width: 768px) {
   body {
     background-color: rgba(20, 202, 202, 0.13); }
-  header .navbar .navbar-brand {
+  header .navbar .container-fluid .navbar-brand {
     margin-top: 1%;
-    width: 20%; }
-  header .navbar ul li {
-    font-size: 0.5rem; }
-    header .navbar ul li .nav-link {
-      padding: 0.2%;
+    width: 5rem;
+    padding: 0%; }
+  header .navbar .navbar-collapse ul li {
+    font-size: 0.2rem; }
+    header .navbar .navbar-collapse ul li .nav-link {
+      padding: 0.1%;
       margin: 0%;
       color: #033d3d;
       font-size: 1.5rem;
@@ -680,6 +761,38 @@ footer {
       .main_ubicacion .mapa_formulario .contenedor_video .video_2 {
         width: 100%;
         height: 15rem; }
+  /* la galeria */
+  .main_galeria h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1%;
+    font-family: "Old Standard TT", serif;
+    color: #010122;
+    animation: none; }
+  .main_galeria .galeria {
+    background-color: rgba(140, 163, 133, 0.801);
+    gap: 1%;
+    row-gap: 1%;
+    padding: 1%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-areas: "galeria_imag_1 galeria_imag_2" "galeria_imag_3 galeria_imag_4" "galeria_imag_5 galeria_imag_6" "galeria_imag_7 galeria_imag_8" "galeria_imag_9 galeria_imag_10" "galeria_imag_11 galeria_imag_12" "galeria_imag_13 galeria_imag_14" "galeria_imag_15 galeria_imag_16" "galeria_imag_17 galeria_imag_18" "galeria_imag_19 galeria_imag_20"; }
+    .main_galeria .galeria .galeria_imag {
+      margin-left: 2%;
+      margin-right: 2%;
+      width: 96%;
+      height: 100%;
+      margin-top: 0%; }
+      .main_galeria .galeria .galeria_imag:hover {
+        transform: none; }
+  .main_galeria .derecho_fotografico {
+    margin-top: 5%;
+    float: none;
+    text-align: center;
+    margin-right: 0%; }
+    .main_galeria .derecho_fotografico .fotografias {
+      font-size: 0.6rem; }
+  /* error 404 */
   .main_404 .tranqui {
     margin-top: 10%;
     margin-bottom: 4%;

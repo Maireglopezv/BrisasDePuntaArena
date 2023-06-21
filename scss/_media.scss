@@ -7,24 +7,31 @@
 
     header{
         .navbar{
-            .navbar-brand{
-                margin-top: 1%;
-                width: 20%; 
+            .container-fluid{
+                .navbar-brand{
+                    margin-top: 1%;
+                    width: 5rem;
+                    padding: 0%; 
+                }
             }
-               
-            ul li{
-                font-size: 0.5rem;
-                    
-                .nav-link{
-                    padding: 0.2%;
-                    margin: 0%;
-                    color:rgb(3, 61, 61);
-                    font-size: 1.5rem;
-                    background-color:  rgb(140, 163, 133);
-                    box-shadow: 6px 6px 15px $mar;
+            
+            .navbar-collapse{
+
+                ul li{
+                    font-size: 0.2rem; 
+                     
+                    .nav-link{
+                        padding: 0.1%;
+                        margin: 0%;
+                        color:rgb(3, 61, 61);
+                        font-size: 1.5rem;
+                        background-color:  rgb(140, 163, 133);
+                        box-shadow: 6px 6px 15px $mar;
+                    }
                 }
             }
         }
+        
     }
     
     footer{
@@ -332,6 +339,58 @@
         }
     }
 
+     /* la galeria */
+
+    .main_galeria{
+
+        h1{
+            @include propiedades_h1_mobile;
+        }
+
+        .galeria{
+            background-color: $arena_difm2;
+            gap: 1%;
+            row-gap: 1%;
+            padding: 1%;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(10, 1fr);
+            grid-template-areas: 
+            "galeria_imag_1 galeria_imag_2"
+            "galeria_imag_3 galeria_imag_4"
+            "galeria_imag_5 galeria_imag_6"
+            "galeria_imag_7 galeria_imag_8"
+            "galeria_imag_9 galeria_imag_10"
+            "galeria_imag_11 galeria_imag_12"
+            "galeria_imag_13 galeria_imag_14"
+            "galeria_imag_15 galeria_imag_16"
+            "galeria_imag_17 galeria_imag_18"
+            "galeria_imag_19 galeria_imag_20"
+            ;
+            .galeria_imag{
+                margin-left: 2%;
+                margin-right: 2%;
+                width: 96%;
+                height: 100%;
+                margin-top: 0%;
+                &:hover{
+                    transform: none;
+                }
+            }
+        }
+        .derecho_fotografico{
+            margin-top: 5%;
+            float: none;
+            text-align: center;
+            margin-right: 0%;
+            .fotografias{
+                font-size: 0.6rem;
+
+            }
+        }
+    }
+
+    /* error 404 */
+
     .main_404{
         
         .tranqui{
@@ -355,5 +414,6 @@
             margin-bottom: 12%;
         }
     }
+
 }
   

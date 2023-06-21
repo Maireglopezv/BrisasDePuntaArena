@@ -1,0 +1,112 @@
+.main_galeria{
+
+    h1{
+        @include propiedades_h1;
+    }
+
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(4, 0.5fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 1%;
+        row-gap: 3%;
+        padding: 2%;
+        margin-top: 3%;
+        justify-items: center;
+        grid-template-areas:
+        "galeria_imag_1 galeria_imag_2 galeria_imag_3 galeria_imag_4"
+        "galeria_imag_13 galeria_imag_14 galeria_imag_15 galeria_imag_16"
+        "galeria_imag_5 galeria_imag_6 galeria_imag_7 galeria_imag_8"
+        "galeria_imag_9 galeria_imag_10 galeria_imag_11 galeria_imag_12"
+        "galeria_imag_17 galeria_imag_18 galeria_imag_19 galeria_imag_20";
+            .galeria_imag_1{
+                grid-area: galeria_imag_1;
+            }
+            .galeria_imag_2{
+                grid-area: galeria_imag_2;
+            }
+            .galeria_imag_3{
+                grid-area: galeria_imag_3;
+            }
+            .galeria_imag_4{
+                grid-area: galeria_imag_4;
+            }
+            .galeria_imag_5{
+                grid-area: galeria_imag_5;
+            }
+            .galeria_imag_6{
+                grid-area: galeria_imag_6;
+            }
+            .galeria_imag_7{
+                grid-area: galeria_imag_7;
+            }
+            .galeria_imag_8{
+                grid-area: galeria_imag_8;
+            }
+            .galeria_imag_9{
+                grid-area: galeria_imag_9;
+            }
+            .galeria_imag_10{
+                grid-area: galeria_imag_10;
+            }
+            .galeria_imag_11{
+                grid-area: galeria_imag_11;
+            }
+            .galeria_imag_12{
+                grid-area: galeria_imag_12;
+            }
+            .galeria_imag_13{
+                grid-area: galeria_imag_13;
+            }
+            .galeria_imag_14{
+                grid-area: galeria_imag_14;
+            }
+            .galeria_imag_15{
+                grid-area: galeria_imag_15;
+            }
+            .galeria_imag_16{
+                grid-area: galeria_imag_16;
+            }
+            .galeria_imag_17{
+                grid-area: galeria_imag_17;
+            }
+            .galeria_imag_18{
+                grid-area: galeria_imag_18;
+            }
+            .galeria_imag_19{
+                grid-area: galeria_imag_19;
+            }
+            .galeria_imag_20{
+                grid-area: galeria_imag_20;
+            }
+
+            .galeria_imag{
+                    width: 95%;
+                    height: 100%;
+                    transition: all .4s ease-in-out;
+                    transition: all 500ms ease-out;
+                    box-shadow: 6px 6px 15px $mar;
+                    cursor: pointer;
+                    &:hover{
+                        @include hover_comida; 
+                    }
+                
+            }
+          
+        }
+
+        .derecho_fotografico{
+            float: right;
+            margin-right: 4%; 
+            .fotografias{
+                text-decoration: none;
+                font-family: $letra1;
+                font-size: 0.8rem;
+                color: white;
+                
+                &:hover{
+                    color:$mar;
+                }
+            }
+        }
+}
