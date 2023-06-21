@@ -434,8 +434,7 @@ footer {
   0% {
     opacity: 0; }
   50% {
-    opacity: 1;
-    color: #010122; }
+    opacity: 1; }
   100% {
     opacity: 0; } }
 
